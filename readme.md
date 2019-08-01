@@ -27,4 +27,4 @@
 ## Roadmap
 
 > Axate will be partnering with CMS providers in the near future.<br />
-> For more information about being a technology partner, or any other technical queries, please contact [dev@axate.com](mailto:dev@axate.com?subject=Integrate with Axate)
+> For more information about being a technology partner, or any other technical queries, please contact <a href="mailto:dev@axate.com?subject=Integrate with Axate">dev@axate.com</a>
