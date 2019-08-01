@@ -24,14 +24,12 @@ The following assumes a templating system (e.g. JSP, Twig, Mustache, Jinja2, etc
 ```
 
 
-#### Including Fonts 
+#### Including Axate Stylesheet
 
-AMP Axate Wallet uses the following fonts: `Source Sans Pro`, `Georgia`, `Open Sans` and `Roboto`.
-
-Place the following code in the `<head>` section of your template:  
+Now add the our Axate wallet stylesheet link to the `<head>` of your template: 
 
 ```html
-<link href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Source+Sans+Pro|Georgia|Open+Sans|Roboto" rel="stylesheet" type="text/css">
+<link type="text/css" rel="stylesheet" href="axate-amp-alpha.css" />
 ```
 
 
