@@ -23,3 +23,8 @@
 * <del>[Axate AMP Overview <sup>α</sup>](./docs/amp/readme.md)</del>
 * [Integrating Axate AMP <sup>α</sup>](./docs/amp/amp-integration.md)
 * <del>[Axate AMP and WordPress (TBA)](./docs/amp/amp-and-wordpress.md)</del>
+
+## Roadmap
+
+> Axate will be partnering with CMS providers in the near future.<br />
+> For more information about being a technology partner, or any other technical queries, please contact [dev@axate.com](mailto:dev@axate.com?subject=Integrate with Axate)
