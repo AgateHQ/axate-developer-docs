@@ -1,3 +1,4 @@
-# AMP and WordPress
+## Axate AMP WordPress Plugin (TBA)
 
-_TODO - Everthing_
+> Please note: these docs are actively in development, and are a work in progress.
+ 

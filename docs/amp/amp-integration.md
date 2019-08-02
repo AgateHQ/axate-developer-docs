@@ -1,6 +1,6 @@
 ## Integrating Axate AMP
 
-> Please note: these docs are actively in development, and are a work in progress
+> Please note: these docs are actively in development, are a work in progress, and are subject to change. 
 
 
 
@@ -13,31 +13,42 @@ The following assumes a templating system (e.g. JSP, Twig, Mustache, Jinja2, etc
 
 &nbsp;
 
+
 ### Preparing Template for Axate Wallet
 
-#### Including Canonical Reference
+Now, we'll step through each tag/code block that will need to be added.
 
-> TODO - Explantion(s)
+
+#### Including a reference to your AMP content
+
+> AMP allows discoverability of AMP versions of content within non-AMP pages (and vice-versa). <br />
+> See "[Make your pages discoverable](https://amp.dev/documentation/guides-and-tutorials/optimize-and-measure/discovery/) for more information.
+
+**For your standard, non-AMP template**  
+
+Within the `<head>` section of your template and replace `INSERT_URL_TO_AMP_VERSION_OF_ARTICLE` with the URL of the AMP 
 
 ```html
-<link rel="canonical" href="amp-access-agate.html">
+<link rel="canonical" href="{{INSERT_URL_TO_AMP_VERSION_OF_ARTICLE}}" />
 ```
 
 
-#### Including Axate Stylesheet
+#### Including Axate AMP Stylesheets
 
 Now add the our Axate wallet stylesheet link to the `<head>` of your template: 
 
 ```html
-<link type="text/css" rel="stylesheet" href="axate-amp-alpha.css" />
+<link type="text/css" href="https://axate-amp.s3.eu-west-2.amazonaws.com/axate.css" />
 ```
 
+#### Including AMP Project Styles and Components
 
+AMP also requires their boilerplate CSS as a `<style>` block, so add the following: 
 
+```html
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
-#### Including AMP Project Components
-
-> Note: for a full list of AMP components, please see [The AMP component catalogue](https://amp.dev/documentation/components/)
+```
 
 AMP Axate Wallet uses for AMP components: `amp-analytics`, `amp-access`, `amp-mustache` and `amp-form`.
 
@@ -50,9 +61,11 @@ The following code should also be placed in the `<head>` section of your templat
 <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
 
 ```
+> Note: for a full list of AMP components, please see [The AMP component catalogue](https://amp.dev/documentation/components/)
 
 
-### Including AMP Access Configuration 
+
+#### Including AMP Access Configuration 
 
 > TODO - Explantion(s)
 
@@ -79,3 +92,24 @@ The following code should also be placed in the `<head>` section of your templat
 }
 </script>
 ```
+
+
+#### Final Result
+
+The `<head>` section of your template/document should look like this:
+
+
+
+
+
+### Optional
+
+The following may be added for a better user experience for your readers
+
+#### Anchor link to premium article section
+
+1. Add an `id` to main article container and an anchor link above the Axate wallet: 
+	* `<article id="main_article">Jump to article</article>`  
+	* `<a target="_top" href="#main_article">Go to article</a>`
+2. Or: add a bare/generic anchor link: `<a href="#">Go to article</a>`
+
