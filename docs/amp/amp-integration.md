@@ -5,8 +5,8 @@
 &nbsp;
 
 
-### Introduction
---
+### Introduction  
+---
 
 This guide is is for custom AMP integration with your pre-existing site and/or CMS.  
 A WordPress plugin guide will be available in the future.
@@ -16,8 +16,8 @@ The following assumes a dynamic templating system (e.g. JSP, Twig, Mustache, Jin
 &nbsp;
 
 
-### Preparing Template for Axate Wallet
---
+### Preparing Template for Axate Wallet  
+---
 
 Now, we'll step through each tag/code block that will need to be added.  
 
@@ -118,8 +118,8 @@ Visit our demo Axate AMP publication and view source as a reference working impl
 &nbsp;
 
 
-### Optional
---
+### Optional  
+---
 
 The following may be added for a better user experience for your readers
 
