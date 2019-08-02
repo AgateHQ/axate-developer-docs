@@ -2,22 +2,26 @@
 
 > Please note: these docs are actively in development, are a work in progress, and are subject to change. 
 
+&nbsp;
 
 
 ### Introduction
+--
 
 This guide is is for custom AMP integration with your pre-existing site and/or CMS.  
 A WordPress plugin guide will be available in the future.
 
-The following assumes a templating system (e.g. JSP, Twig, Mustache, Jinja2, etc).
+The following assumes a dynamic templating system (e.g. JSP, Twig, Mustache, Jinja2, etc) and are required for Axate AMP. 
 
 &nbsp;
 
 
 ### Preparing Template for Axate Wallet
+--
 
-Now, we'll step through each tag/code block that will need to be added.
+Now, we'll step through each tag/code block that will need to be added.  
 
+&nbsp;
 
 #### Including a reference to your AMP content
 
@@ -32,6 +36,8 @@ Within the `<head>` section of your template and replace `INSERT_URL_TO_AMP_VERS
 <link rel="canonical" href="{{INSERT_URL_TO_AMP_VERSION_OF_ARTICLE}}" />
 ```
 
+&nbsp;
+
 
 #### Including Axate AMP Stylesheets
 
@@ -40,6 +46,8 @@ Now add the our Axate wallet stylesheet link to the `<head>` of your template:
 ```html
 <link type="text/css" href="https://axate-amp.s3.eu-west-2.amazonaws.com/axate.css" />
 ```
+
+&nbsp;
 
 #### Including AMP Project Styles and Components
 
@@ -62,6 +70,9 @@ The following code should also be placed in the `<head>` section of your templat
 
 ```
 > Note: for a full list of AMP components, please see [The AMP component catalogue](https://amp.dev/documentation/components/)
+
+&nbsp;
+
 
 
 
@@ -93,16 +104,22 @@ The following code should also be placed in the `<head>` section of your templat
 </script>
 ```
 
+&nbsp;
+
 
 #### Final Result
 
-The `<head>` section of your template/document should look like this:
+Visit our demo Axate AMP publication and view source as a reference working implementation.  
+
+### [Axate AMP Demo](https://axate-amp.s3.eu-west-2.amazonaws.com/index.html)
 
 
 
+&nbsp;
 
 
 ### Optional
+--
 
 The following may be added for a better user experience for your readers
 
