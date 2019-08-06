@@ -1,4 +1,4 @@
-<img src=".assets/images/logo-axate-dark-transparent.svg" alt="drawing" alt="Axate" width="100" />
+<img src="https://axate-amp.s3.eu-west-2.amazonaws.com/images/logo-axate-dark-transparent.svg" alt="drawing" alt="Axate" width="100" />
 
 ### Every publisher needs better ways to make money.
 
@@ -24,9 +24,9 @@
 * [Integrating Axate AMP <sup>α</sup>](./docs/amp/amp-integration.md)
 * <del>[Axate AMP and WordPress (TBA)](./docs/amp/amp-and-wordpress.md)</del>
 
-* 
+
 
 ## Roadmap
 
-> Axate will be partnering with CMS providers in the near future.<br />
+> Axate will be partnering with CMS and technology providers in the near future.<br />
 > For more information about being a technology partner, or any other technical queries, please contact <a href="mailto:dev@axate.com?subject=Integrate with Axate">dev@axate.com</a>
