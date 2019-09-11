@@ -41,11 +41,16 @@ Within the `<head>` section of your template and replace `INSERT_URL_TO_AMP_VERS
 
 #### Including Axate AMP Stylesheets
 
-Now add the our Axate wallet stylesheet link to the `<head>` of your template: 
+Now add the our Axate wallet stylesheet link to the `<head>` of your template.
+As AMP doesn't allow linked stylesheets, you'll have to include the contents of [axate.css](https://github.com/AgateHQ/axate-amp-sample-code/blob/master/src/assets/css/axate.css) into a `<style>` tag:
 
 ```html
-<link type="text/css" href="https://axate-amp.s3.eu-west-2.amazonaws.com/axate.css" />
+<style type="text/css">
+/* Axate CSS */
+</style>
 ```
+
+Here's an [example using the Pug](https://github.com/AgateHQ/axate-amp-sample-code/blob/0bd26530eb2f143ad1209f085728318abed5f698/src/pug/axate-amp-config.include.pug#L10).
 
 &nbsp;
 
@@ -78,33 +83,49 @@ The following code should also be placed in the `<head>` section of your templat
 
 #### Including AMP Access Configuration 
 
-> TODO - Explantion(s)
+AMP Access to manage authorisation of paid content. 
+Add the following block to the head section of your template. 
 
 
 ```json
 <script id="amp-access" type="application/json">
-{
-	"noPingback": true,
-	"authorization": "https://staging.agate.io/api/authorisation?domain=CANONICAL_URL&rid=READER_ID&url=CANONICAL_URL&premium=true",
-	"login": {
-	  "sign-in": "https://account-staging.agate.io/my-agate/sign-in?rid=READER_ID&url=CANONICAL_URL&url_from=DOCUMENT_REFERRER",
-	  "sign-out": "https://staging.agate.io/api/amp_logout?url=CANONICAL_URL&url_from=DOCUMENT_REFERRER",
-	  "sign-up": "https://account-staging.agate.io/my-agate/sign-up?publication_name=localhost&pub_id=localhost&url_from=CANONICAL_URL",
-	  "top-up": "https://account-staging.agate.io/top-up?domain=localhost&uid=339&jwt_token=eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozMzksImlhdCI6MTU1ODQzNzI3NiwianRpIjoiNmUxODNlYjAxZWExZjQyOWFhYjg1NjZjMjJjYjBlYWQifQ.Qjf92yBQ2XJ1jGpl7NtLtYZcYZhSoVMVMAx5OtoHJJ0&from=CANONICAL_URL",
-	  "set-threshold-yes": "https://staging.agate.io/amp/set_threshold?domain=CANONICAL_URL&rid=READER_ID&url=CANONICAL_URL&url_from=DOCUMENT_REFERRER&amount=100",
-	  "set-threshold-no": "https://staging.agate.io/amp/set_threshold?domain=CANONICAL_URL&rid=READER_ID&url=CANONICAL_URL&url_from=DOCUMENT_REFERRER&amount=0",
-	  "authorise-charge-true": "https://staging.agate.io/amp/authorise_charge?charge_automatically=true&domain=CANONICAL_URL&rid=READER_ID&url=CANONICAL_URL&url_from=DOCUMENT_REFERRER",
-	  "authorise-charge-false": "https://staging.agate.io/amp/authorise_charge?charge_automatically=false&domain=CANONICAL_URL&rid=READER_ID&url=CANONICAL_URL&url_from=DOCUMENT_REFERRER"
-	},
-	"authorizationFallbackResponse": {
-	    "error": true,
-	    "user": false
-	}
-}
+  {
+    "noPingback": true,
+    "authorization": "https://staging.agate.io/api/authorisation?domain=CANONICAL_URL&rid=READER_ID&url=CANONICAL_URL&premium=true",
+    "login": {
+      "sign-in": "https://account-staging.agate.io/my-agate/sign-in?rid=READER_ID&url=CANONICAL_URL&url_from=DOCUMENT_REFERRER",
+      "sign-out": "https://staging.agate.io/api/amp_logout?url=CANONICAL_URL&url_from=DOCUMENT_REFERRER",
+      "sign-up": "https://account-staging.agate.io/my-agate/sign-up?publication_name=localhost&pub_id=localhost&url_from=CANONICAL_URL",
+      "top-up": "https://account-staging.agate.io/top-up?domain=localhost&uid=339&jwt_token=eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozMzksImlhdCI6MTU1ODQzNzI3NiwianRpIjoiNmUxODNlYjAxZWExZjQyOWFhYjg1NjZjMjJjYjBlYWQifQ.Qjf92yBQ2XJ1jGpl7NtLtYZcYZhSoVMVMAx5OtoHJJ0&from=CANONICAL_URL",
+      "set-threshold-yes": "https://staging.agate.io/amp/set_threshold?domain=CANONICAL_URL&rid=READER_ID&url=CANONICAL_URL&url_from=DOCUMENT_REFERRER&amount=100",
+      "set-threshold-no": "https://staging.agate.io/amp/set_threshold?domain=CANONICAL_URL&rid=READER_ID&url=CANONICAL_URL&url_from=DOCUMENT_REFERRER&amount=0",
+      "authorise-charge-true": "https://staging.agate.io/amp/authorise_charge?charge_automatically=true&domain=CANONICAL_URL&rid=READER_ID&url=CANONICAL_URL&url_from=DOCUMENT_REFERRER",
+      "authorise-charge-false": "https://staging.agate.io/amp/authorise_charge?charge_automatically=false&domain=CANONICAL_URL&rid=READER_ID&url=CANONICAL_URL&url_from=DOCUMENT_REFERRER"
+    },
+    "authorizationFallbackResponse": {
+      "error": true,
+      "user": false
+    }
+  }
 </script>
 ```
 
 &nbsp;
+
+
+
+
+
+#### Wallet Code
+
+The wallet allows users to manage payments, settings and reading preferences.
+We suggest you place this at the bottom of your page template (either above, or below your AMP templates footer. 
+
+As the code snippet is rather large:
+
+* See this HTML code sample ([line 268](https://github.com/AgateHQ/axate-amp-sample-code/blob/0bd26530eb2f143ad1209f085728318abed5f698/src/example/index.html#L268) to [line](https://github.com/AgateHQ/axate-amp-sample-code/blob/0bd26530eb2f143ad1209f085728318abed5f698/src/example/index.html#L503)
+* ...or view/use [the Pug include](https://github.com/AgateHQ/axate-amp-sample-code/blob/master/src/pug/axate-amp-wallet.include.pug)
+
 
 
 #### Final Result
