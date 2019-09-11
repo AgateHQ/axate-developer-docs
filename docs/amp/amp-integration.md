@@ -123,7 +123,7 @@ We suggest you place this at the bottom of your page template (either above, or 
 
 As the code snippet is rather large:
 
-* See this HTML code sample ([line 268](https://github.com/AgateHQ/axate-amp-sample-code/blob/0bd26530eb2f143ad1209f085728318abed5f698/src/example/index.html#L268) to [line 503](https://github.com/AgateHQ/axate-amp-sample-code/blob/0bd26530eb2f143ad1209f085728318abed5f698/src/example/index.html#L503)
+* See this HTML code sample ([line 268](https://github.com/AgateHQ/axate-amp-sample-code/blob/master/src/example/index.html#L268) to [line 503](https://github.com/AgateHQ/axate-amp-sample-code/blob/master/src/example/index.html#L503)
 * ...or view/use [the Pug include](https://github.com/AgateHQ/axate-amp-sample-code/blob/master/src/pug/axate-amp-wallet.include.pug)
 
 
