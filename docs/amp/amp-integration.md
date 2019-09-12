@@ -63,7 +63,7 @@ AMP also requires their boilerplate CSS as a `<style>` block, so add the followi
 
 ```
 
-AMP Axate Wallet uses for AMP components: `amp-analytics`, `amp-access`, `amp-mustache` and `amp-form`.
+AMP Axate Wallet uses three AMP components: `amp-analytics`, `amp-access` and `amp-mustache`.
 
 The following code should also be placed in the `<head>` section of your template:  
 
@@ -71,8 +71,6 @@ The following code should also be placed in the `<head>` section of your templat
 <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 <script async custom-element="amp-access" src="https://cdn.ampproject.org/v0/amp-access-0.1.js"></script>
 <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
-<script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
-
 ```
 > Note: for a full list of AMP components, please see [The AMP component catalogue](https://amp.dev/documentation/components/)
 
