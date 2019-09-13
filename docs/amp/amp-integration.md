@@ -50,7 +50,7 @@ As AMP doesn't allow linked stylesheets, you'll have to include the contents of 
 </style>
 ```
 
-Here's an [example using the Pug](https://github.com/AgateHQ/axate-amp-sample-code/blob/0bd26530eb2f143ad1209f085728318abed5f698/src/pug/axate-amp-config.include.pug#L10).
+Here's an [example using Pug](https://github.com/AgateHQ/axate-amp-sample-code/blob/0bd26530eb2f143ad1209f085728318abed5f698/src/pug/axate-amp-config.include.pug#L10).
 
 &nbsp;
 
