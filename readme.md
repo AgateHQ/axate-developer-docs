@@ -19,7 +19,7 @@
 1. [Integrating with Axate](./docs/readme.md)
 2. [Providing an API for Content Retrieval](./docs/content-api.md)
 3. [Using WP-REST API (only for Wordpress)](./docs/wordpress-api.md)
-4. [Incorporating Subscribtions)](./docs/subscriptions-api.md)
+4. [Incorporating Subscribtions](./docs/subscriptions-api.md)
 5. <del>[Troubleshooting (WIP)](./docs/troubleshooting.md)</del>
 
 ### Axate AMP
