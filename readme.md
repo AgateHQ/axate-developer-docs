@@ -2,7 +2,7 @@
 
 ### Every publisher needs better ways to make money.
 
-> Axate is a federated payment wallet for digital media.
+> Axate is a payment wallet for digital media.
 
 
 
