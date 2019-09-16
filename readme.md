@@ -16,7 +16,7 @@
 
 ### Axate Wallet
 
-* <del>[Integrating with Axate (WIP)](./docs/readme.md)</del>
+* [Integrating with Axate (WIP)](./docs/readme.md)
 * <del>[Troubleshooting (WIP)](./docs/troubleshooting.md)</del>
 
 ### Axate AMP
