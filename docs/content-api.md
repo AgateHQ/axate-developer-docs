@@ -1,7 +1,7 @@
 ### Setup or provide API access to retrieve content
 
 
-> If you’re on WordPress, WP-REST JSON Api would be that API, you can go directly to [Using WP-REST API (only for Wordpress)](./wordpress-api.md)
+> If you’re on WordPress, WP-REST JSON Api would be that API, you can go directly to [Using WP-REST API](./wordpress-api.md)
 
 
 This step is to prevent tech-savvy users from being able to circumvent Axate. 
