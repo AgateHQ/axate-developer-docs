@@ -1,4 +1,4 @@
-### How you incorporate your subscribers
+### How you incorporate your subscribers
 
 If you have a subscription model which includes website access as a benefit, there are various ways of implementing Axate to complement your existing offer.
 
