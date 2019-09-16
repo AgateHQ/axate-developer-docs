@@ -41,7 +41,7 @@ The way Axate works, publishers have complete control over which articles are ch
 For every article that you wish to be treated as a premium, paid-for article, just include a tag that you have defined above as premium. Any articles without this tag will not be charged for.
 
 For example:
-```
+```html
 <div class="story-non-premium">
   <h1> Title of the Story </h1>
 </div>
