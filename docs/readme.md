@@ -2,6 +2,10 @@
 
 To get Axate to work on your site you need to add an Axate script to your web templates. This is what causes the Axate tab to appear on your pages.
 
+To quickly get a sense, and try a quick demo, refer to this Codepen
+
+* https://codepen.io/justalex/pen/erZGqm
+
 #### Adding the Axate script
 
 With most publishers we start off by testing Axate on a staging version of their site (one they keep for internal development and testing and which isn’t available to the public). This allows us to test the integration with dummy accounts and data before we move to the live environment.
