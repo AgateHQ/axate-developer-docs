@@ -51,3 +51,7 @@ For example:
    and will only be revealed to those who paid for it 
 </div>
 ```
+
+By way of illustration:
+
+
