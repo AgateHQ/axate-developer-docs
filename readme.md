@@ -16,7 +16,8 @@
 
 ### Axate Wallet
 
-* [Integrating with Axate (WIP)](./docs/readme.md)
+* [Integrating with Axate](./docs/readme.md)
+* [Providing an API for Content Retrieval](./docs/content-api.md)
 * <del>[Troubleshooting (WIP)](./docs/troubleshooting.md)</del>
 
 ### Axate AMP
