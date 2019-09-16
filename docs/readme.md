@@ -56,3 +56,10 @@ By way of illustration:
 
 ![Image of Axate Page Notice](https://raw.githubusercontent.com/AgateHQ/axate-developer-docs/master/.assets/images/axate-page-notice.png)
 
+
+
+### Next Steps
+
+2. [Providing an API for Content Retrieval](./docs/content-api.md)
+3. [Using WP-REST API (only for Wordpress)](./docs/wordpress-api.md)
+4. [Incorporating Subscribtions](./docs/subscriptions-api.md)
