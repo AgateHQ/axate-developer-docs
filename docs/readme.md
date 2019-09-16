@@ -27,3 +27,20 @@ The configuration contains the premium class and Axate-notice class attributes.
 * The script specifies that anything on the page that is attributed with the class “premium” will treated by Axate as a premium, paid-for article, i.e. it specifies the part of the page which contains the premium content.
 
 * The element on the page that is attributed with the class “agate-notice” will be used to display a page notices to users embedded within your page by Axate. This is used for registration purposes, to display a “call to action” inviting the user to register for Axate. There are also other circumstances in which Axate needs to display a page notice. Wherever you put this element determines where the page notice will appear, and the lead-in will appear above it.
+
+That’s the most technical bit done! The next step is to mark articles as premium...
+
+#### Tagging articles
+
+The way Axate works, publishers have complete control over which articles are charged for, and which are not. That means you need to tag them in your CMS so our system knows when to charge. Luckily this is very simple.
+
+For every article that you wish to be treated as a premium, paid-for article, just include a tag that you have defined above as premium. Any articles without this tag will not be charged for.
+
+For example:
+```
+<div class="story-non-premium">
+  <h1> Title of the Story </h1>
+</div>
+<div class="agate-notice"></div>
+<div class="premium"> This is where the main content of the story resides, and will only be revealed to those who paid for it </div>
+```
