@@ -20,7 +20,8 @@
 2. [Providing an API for Content Retrieval](./docs/content-api.md)
 3. [Using WP-REST API (only for Wordpress)](./docs/wordpress-api.md)
 4. [Incorporating Subscribtions](./docs/subscriptions-api.md)
-5. <del>[Troubleshooting (WIP)](./docs/troubleshooting.md)</del>
+5. [Testing & Go Live](./docs/testing-and-go-live.md)
+6. <del>[Troubleshooting (WIP)](./docs/troubleshooting.md)</del>
 
 ### Axate AMP
 * <del>[Axate AMP Overview <sup>α</sup>](./docs/amp/readme.md)</del>
