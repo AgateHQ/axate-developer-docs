@@ -1,8 +1,11 @@
 ## Testing & Go Live
 
-### On staging
 
-We can provide you with dummy credit card credentials so that you can set up user accounts on your staging environment without spending any actual real money. Although PayPal and Apple Pay will be available to your users when your implementation switches to live, we can’t provide dummy credentials for those.
+### Testing on Staging
+
+We can provide you with dummy credit card credentials so that you can set up user accounts on your staging environment without spending any actual real money. 
+
+Although PayPal and Apple Pay will be available to your users when your implementation switches to live, we can’t provide dummy credentials for those.
 
 ### On Live, prior to Go Live
 
@@ -31,9 +34,11 @@ Once you add the code, the green tab will appear in the left of the page, but no
 
 Let us know when the implementation has passed your user acceptance testing.
 
-Once we have agreed a time and date for launch, we are ready to go-live. On go-live , the Axate code needs to be applied to the whole of the site. 
+### Go Live
 
-To do this, move the code to the header section of the template. 
+Once we have agreed a time and date for launch, we are ready to go-live. On go-live, the Axate code needs to be applied to the whole of the site. 
+
+To do this, move the code to the header section of your CMS template.
 
 The green Axate tab will appear on all articles (free and premium) but the page notice will only appear on premium articles.
 Please ensure that the code is inserted in priority to any ads loading.
