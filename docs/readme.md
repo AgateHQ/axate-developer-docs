@@ -60,6 +60,6 @@ By way of illustration:
 
 ### Next Steps
 
-2. [Providing an API for Content Retrieval](./docs/content-api.md)
-3. [Using WP-REST API (only for Wordpress)](./docs/wordpress-api.md)
-4. [Incorporating Subscribtions](./docs/subscriptions-api.md)
+2. [Providing an API for Content Retrieval](./content-api.md)
+3. [Using WP-REST API (only for Wordpress)](./wordpress-api.md)
+4. [Incorporating Subscribtions](./subscriptions-api.md)
