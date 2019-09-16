@@ -1,4 +1,4 @@
-# Setup or provide API access to retrieve content
+## Setup or provide API access to retrieve content
 
 This step is to prevent tech-savvy users from being able to circumvent Axate. 
 
