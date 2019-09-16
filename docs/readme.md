@@ -54,4 +54,5 @@ For example:
 
 By way of illustration:
 
+![Image of Axate Page Notice](https://raw.githubusercontent.com/AgateHQ/axate-developer-docs/master/.assets/images/axate-page-notice.png)
 
