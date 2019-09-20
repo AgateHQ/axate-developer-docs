@@ -24,9 +24,11 @@
 6. <del>[Troubleshooting (WIP)](./docs/troubleshooting.md)</del>
 
 ### Axate AMP
-* <del>[Axate AMP Overview <sup>α</sup>](./docs/amp/readme.md)</del>
-* [Integrating Axate AMP <sup>α</sup>](./docs/amp/amp-integration.md)
+* [Axate AMP Overview](./docs/amp/readme.md)
+* [Integrating Axate AMP](./docs/amp/amp-integration.md)
 * <del>[Axate AMP and WordPress (TBA)](./docs/amp/amp-and-wordpress.md)</del>
+* <del>[Troubleshooting AMP <sup>α</sup>](./docs/amp/troubleshooting-amp.md)</del>
+
 
 
 
