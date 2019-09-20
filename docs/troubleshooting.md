@@ -23,6 +23,6 @@ Users can opt-out of analytics cookies on their account page, or even block it b
 That cookie is named `agate_cookie`, and comes from `https://account.agate.io` , it is an HttpOnly cookie and always Secure to prevent any other site using it for any potentially malicous purposes.
 
 
-## Adding Fade-in to a non-Axate standfirst
+## Adding Fade-in to a non-Axate lead in
 
 > TBC
