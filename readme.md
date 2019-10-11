@@ -32,7 +32,7 @@
 
 ## Research &amp; Development
 
-
+* <del>[Facebook Instant Articles (TBA)](./docs/research/facebook-instant-articles.md)</del>
 
 ## Roadmap
 
