@@ -11,7 +11,7 @@
 
 **Note: these developer docs are a work in progress**
 
-> Please note: these docs are actively in development, and are a work in progress
+> Please note: these docs are actively in development, and are a work in progress if you spot anything that is unclear, feel free to contact <a href="mailto:dev@axate.com?subject=Integrate with Axate">dev@axate.com</a>
 
 
 ### Axate Wallet
