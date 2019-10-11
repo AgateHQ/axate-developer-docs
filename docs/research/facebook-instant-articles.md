@@ -41,7 +41,7 @@ For more, see [Facebook Instant Articles](https://instantarticles.fb.com/).
 	* You may have multiple Facebook pages, so choose the relevant one to complete sign up.
 2. Claim your URL by adding a `<meta property="fb:pages" />` tag to your template(s)
 	* e.g. `<meta property="fb:pages" content="101010101010101" />`
-3. Create articke
+3. Create article
 	* This process is slightly easier [with WordPress](https://github.com/Automattic/facebook-instant-articles-wp/)
 4. If it exists, connect your publications [RSS feed to your Facebook page](https://developers.facebook.com/docs/instant-articles/publishing/setup-rss-feed)
 
