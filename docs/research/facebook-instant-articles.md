@@ -67,10 +67,10 @@ For more, see [Facebook Instant Articles](https://instantarticles.fb.com/).
 #### Subscriptions
 
 *Instant Articles*  
-<img src="../assets/facebook-journalism-project-facebook-instant-articles-3-screens.png" width="500" />
+<img src="../../.assets/images/facebook-journalism-project-facebook-instant-articles-3-screens.png" width="500" />
 
 *Subscriptions*  
-<img src="../assets/facebook-journalism-project-facebook-instant-articles-link-subscription-screen.png" width="200" />  
+<img src="../../.assets/images/facebook-journalism-project-facebook-instant-articles-link-subscription-screen.png" width="200" />  
 
 
 

@@ -4,17 +4,18 @@ To get Axate to work on your site you need to add an Axate script to your web te
 
 To quickly get a sense, and try a quick demo, refer to this Codepen
 
-* https://codepen.io/justalex/pen/erZGqm
+* [https://codepen.io/justalex/pen/erZGqm](https://codepen.io/justalex/pen/erZGqm)
 
 #### Adding the Axate script
 
-With most publishers we start off by testing Axate on a staging version of their site (one they keep for internal development and testing and which isn’t available to the public). This allows us to test the integration with dummy accounts and data before we move to the live environment.
+With most publishers we start off by testing Axate on a staging version of their site (one they keep for internal development and testing and which isn’t available to the public). This allows us to test the integration with dummy accounts and data before we move to the live environment.  
 
 This should be identical to your live site in terms of architecture and code
 
 If you don’t have a staging site, then select 10 to 15 old / obsolete articles on your live site that are unlikely to be the subject of Google searches.
 
-Adding the script is easy, there are two parts that ideally will go into the body tag, somewhere above your article: the configuration and the JavaScript bundle.
+Adding the script is easy, there are two parts that ideally will go into the body tag, somewhere above your article: the configuration and the JavaScript bundle.  
+
 ```html
 <script async src="https://wallet-staging.agate.io/bundle.js"></script>
 
@@ -40,7 +41,8 @@ The way Axate works, publishers have complete control over which articles are ch
 
 For every article that you wish to be treated as a premium, paid-for article, just include a tag that you have defined above as premium. Any articles without this tag will not be charged for.
 
-For example:
+For example:  
+
 ```html
 <div class="story-non-premium">
   <h1> Title of the Story </h1>
@@ -54,7 +56,7 @@ For example:
 
 By way of illustration:
 
-![Image of Axate Page Notice](https://raw.githubusercontent.com/AgateHQ/axate-developer-docs/master/.assets/images/axate-page-notice.png)
+![Image of Axate Page Notice](../.assets/images/axate-page-notice.png)
 
 
 
