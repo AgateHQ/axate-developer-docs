@@ -110,6 +110,10 @@ Add the following block to the head section of your template.
 
 &nbsp;
 
+For to free articles, `authorization` URL param `premium` should have the value of `false` (e.g. `premium=false`), while premium articles should have the valie of `premium=true`.  
+
+&nbsp;
+
 
 
 
