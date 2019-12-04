@@ -30,6 +30,10 @@
 * <del>[Troubleshooting AMP <sup>α</sup>](./docs/amp/troubleshooting-amp.md)</del>
 
 
+## General
+
+* [Browser Support](./docs/browser-support.md)
+
 ## Research &amp; Development
 
 * <del>[Facebook Instant Articles (TBA)](./docs/research/facebook-instant-articles.md)</del>

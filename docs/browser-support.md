@@ -11,7 +11,7 @@
 As a general rule, we support [evergreen browsers](https://www.techopedia.com/definition/31094/evergreen-browser) current version, and 3 previous versions. 
 Axate officially support the following browsers and operating systems:
 
---
+
 
 #### Major Browsers
 
