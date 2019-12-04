@@ -11,9 +11,11 @@
 As a general rule, we support [evergreen browsers](https://www.techopedia.com/definition/31094/evergreen-browser) current version, and 3 previous versions. 
 Axate officially support the following browsers and operating systems:
 
+&nbsp;
 
 
-#### Major Browsers
+### Major Browsers
+---
 
 | Browser         | Engine             | Versions       | Platforms                      |
 |:----------------|:-------------------|:---------------|:-------------------------------|
@@ -24,8 +26,11 @@ Axate officially support the following browsers and operating systems:
 
 > Note: you'll likely find find older browser versions will still work. Sadly we don't provide official support for these browsers.
 
+&nbsp;
 
-#### Other Supported Browsers
+
+### Other Supported Browsers
+---
 
 As many browser share the same rendering engine as the major browsers above, the following web browsers are also supported:
 
@@ -57,10 +62,12 @@ As many browser share the same rendering engine as the major browsers above, the
 | Microsoft Edge              | iOS                                  |
 | Samsung Browser             | Android                              |
 
+&nbsp;
 
---
 
-#### Unsupported Browsers
+### Unsupported Browsers
+
+---
 
 
 Although many other browsers which are based on the WebKit, Blink or the Gecko rendering engines may work, we do not officially support them. 
