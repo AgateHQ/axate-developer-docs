@@ -74,17 +74,12 @@ Although many other browsers which are based on the WebKit, Blink or the Gecko r
 
 Here are some we've previously tested: 
 
-**Partial functionality**
-
-| Browser                     | Platforms                            |
-|:----------------------------|:-------------------------------------|
-| Yandex Browser              | Windows 10                           |
-
 
 **Non-functional**
 
 | Browser                     | Platforms                            |
 |:----------------------------|:-------------------------------------|
+| Internet Explorer 11        | Windows 7, 8 and 10                  |
 | Yandex Browser              | Windows 10                           |
 | Kindle Experimental Browser | Kindle                               |
 | Opera Touch                 | Android                              |
