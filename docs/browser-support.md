@@ -8,7 +8,7 @@
 ### Introduction  
 ---
 
-As a general rule, we support [evergreen browsers](https://www.techopedia.com/definition/31094/evergreen-browser) current version, and 3 previous versions. 
+As a general rule, we support [evergreen browsers](https://www.techopedia.com/definition/31094/evergreen-browser) current version, and 2 previous versions. 
 Axate officially support the following browsers and operating systems:
 
 &nbsp;
@@ -19,10 +19,10 @@ Axate officially support the following browsers and operating systems:
 
 | Browser         | Engine             | Versions       | Platforms                      |
 |:----------------|:-------------------|:---------------|:-------------------------------|
-| Microsoft Edge  | Blink and EdgeHTML | 80, 18, 17, 16 | Windows, macOS                 |
-| Mozilla Firefox | Gecko              | 71, 70, 69, 68 | Android, Windows, macOS, Linux |
-| Google Chrome   | Blink              | 78, 77, 76, 75 | Android, Windows, macOS, Linix |
-| Safari          | WebKit             | 13, 12, 11, 10 | macOS, iOS and iPadOS          |
+| Microsoft Edge  | Blink and EdgeHTML | 80, 18, 17     | Windows, macOS                 |
+| Mozilla Firefox | Gecko              | 71, 70, 69     | Android, Windows, macOS, Linux |
+| Google Chrome   | Blink              | 78, 77, 76     | Android, Windows, macOS, Linix |
+| Safari          | WebKit             | 13, 12, 11     | macOS, iOS and iPadOS          |
 
 > Note: you'll likely find find older browser versions will still work. Sadly we don't provide official support for these browsers.
 
