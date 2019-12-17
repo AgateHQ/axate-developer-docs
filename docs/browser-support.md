@@ -17,14 +17,18 @@ Axate officially support the following browsers and operating systems:
 ### Major Browsers
 ---
 
-| Browser         | Engine             | Versions       | Platforms                      |
-|:----------------|:-------------------|:---------------|:-------------------------------|
-| Microsoft Edge  | Blink and EdgeHTML | 80, 18, 17, 16 | Windows, macOS                 |
-| Mozilla Firefox | Gecko              | 71, 70, 69, 68 | Android, Windows, macOS, Linux |
-| Google Chrome   | Blink              | 78, 77, 76, 75 | Android, Windows, macOS, Linix |
-| Safari          | WebKit             | 13, 12, 11, 10 | macOS, iOS and iPadOS          |
+| Browser         | Engine             | Versions                   | Platforms                      |
+|:----------------|:-------------------|:---------------------------|:-------------------------------|
+| Microsoft Edge  | Blink and EdgeHTML | 80, 18, 17, 16             | Windows, macOS                 |
+| Mozilla Firefox | Gecko              | 71, 70, 69, 68             | Android, Windows, macOS, Linux |
+| Google Chrome   | Blink              | 78, 77, 76, 75.            | Android, Windows, macOS, Linix |
+| Safari          | WebKit             | 13<sup>a</sup>, 12, 11, 10 | macOS, iOS and iPadOS          |
 
 > Note: you'll likely find find older browser versions will still work. Sadly we don't provide official support for these browsers.
+> Update: we've recently found that Safari 13.0.4 on macOS 10.15.2 is temporarily not fully supported.
+> 
+> <sup>a.</sup> For end user/consumer information, see: [Axate and Apple Safari](https://www.axate.com/safari-faqs). 
+> For more technical see [WebKit's "Preventing Tracking Prevention Tracking"](https://webkit.org/blog/9661/preventing-tracking-prevention-tracking/)
 
 &nbsp;
 
