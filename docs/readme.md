@@ -17,11 +17,13 @@ If you don’t have a staging site, then select 10 to 15 old / obsolete articles
 Adding the script is easy, there are two parts that ideally will go into the body tag, somewhere above your article: the configuration and the JavaScript bundle.  
 
 ```html
-<script async src="https://wallet-staging.agate.io/bundle.js"></script>
+<script async src="https://wallet.agate.io/bundle.js"></script>
 
 <div id="agate-wallet" 
+ data-selector-environment="staging"
  data-selector-premium-content=".premium" 
- data-selector-in-page-notice=".agate-notice">
+ data-selector-in-page-notice=".axate-notice"
+>
 </div>
 ```
 *Please note that the script uses the word “agate” not “axate”*
@@ -47,7 +49,7 @@ For example:
 <div class="story-non-premium">
   <h1> Title of the Story </h1>
 </div>
-<div class="agate-notice"></div>
+<div class="axate-notice"></div>
 <div class="premium"> 
    This is where the main content of the story resides,
    and will only be revealed to those who paid for it 
