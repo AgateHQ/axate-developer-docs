@@ -49,11 +49,11 @@ For example:
 <div class="story-non-premium">
   <h1> Title of the Story </h1>
 </div>
-<div class="axate-notice"></div>
 <div class="premium"> 
    This is where the main content of the story resides,
    and will only be revealed to those who paid for it 
 </div>
+<div class="axate-notice"></div>
 ```
 
 By way of illustration:
