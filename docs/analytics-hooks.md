@@ -11,7 +11,6 @@ The current flow is:
 * `agateUserLoggedOut()` - Whe a user does log out.
 * `agatePremiumContentRendered()` - When a premium article has been purchased.
 
-
 Example: 
 
 ```js
@@ -21,3 +20,4 @@ function agatePremiumContentRendered() {
 
 };
 ```
+In this example, a subscription offer is ommited after an Axate User has purchased an article via Axate.
