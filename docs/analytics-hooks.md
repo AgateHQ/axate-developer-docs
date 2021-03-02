@@ -6,11 +6,10 @@ These functions can be plugged into, and be used to any purpose on your end, lik
 
 The current flow is:
 
-`agateInit()` - When Axate script is initialized we fire this event.
-
-`agateUserLoggedIn()` - When a user is logged in, happens once on every axate load
-`agateUserLoggedOut()` - Whe a user does log out.
-`agatePremiumContentRendered()` - When a premium article has been purchased.
+* `agateInit()` - When Axate script is initialized we fire this event.
+* `agateUserLoggedIn()` - When a user is logged in, happens once on every axate load
+* `agateUserLoggedOut()` - Whe a user does log out.
+* `agatePremiumContentRendered()` - When a premium article has been purchased.
 
 
 Example: 
