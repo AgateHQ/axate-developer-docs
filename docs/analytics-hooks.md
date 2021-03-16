@@ -21,3 +21,17 @@ function agatePremiumContentRendered() {
 };
 ```
 In this example, a subscription offer is ommited after an Axate User has purchased an article via Axate.
+
+
+### Subscribed Users
+
+* `axateUserLoggedInWithSubscription()` - When a logged in user has a subscription, returns an object via this with two parameters, `subActive` and `subExpiryDate`
+
+Example: 
+
+```js
+function axateUserLoggedInWithSubscription() {
+  console.log(this.subActive); // true
+  console.log(this.subExpiryDate); // "01 April 2024"
+};
+```
