@@ -10,6 +10,8 @@ The current flow is:
 * `agateUserLoggedIn()` - When a user is logged in, happens once on every axate load
 * `agateUserLoggedOut()` - Whe a user does log out.
 * `agatePremiumContentRendered()` - When a premium article has been purchased.
+* `axateUserOnFreePeriod()` - When a user is on Free Period.
+
 
 Example: 
 
