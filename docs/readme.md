@@ -20,11 +20,16 @@ Adding the script is easy, there are two parts that ideally will go into the bod
 <script async src="https://wallet.agate.io/bundle.js"></script>
 
 <div id="agate-wallet" 
- data-selector-environment="staging"
- data-selector-premium-content=".premium" 
- data-selector-in-page-notice=".axate-notice"
->
+data-selector-premium-content=".single-post .category-premium .entry .main-post-content " 
+data-selector-in-page-notice=".agate-notice" 
+data-selector-banner-contribution=".AxateContributionBanner">
 </div>
+
+# Axate Contribution Banner - Add this anywhere in the post. 
+
+<div class="AxateContributionBanner"></div>
+
+
 ```
 *Please note that the script uses the word “agate” not “axate”*
 
