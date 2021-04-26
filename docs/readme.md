@@ -22,12 +22,7 @@ Adding the script is easy, there are two parts that ideally will go into the bod
 <div id="axate-wallet" 
 data-selector-premium-content=".single-post .category-premium .entry .main-post-content " 
 data-selector-in-page-notice=".axate-notice" 
-data-selector-banner-contribution=".AxateContributionBanner">
 </div>
-
-# Axate Contribution Banner - Add this anywhere in the post. 
-
-<div class="AxateContributionBanner"></div>
 
 
 ```
@@ -66,6 +61,11 @@ By way of illustration:
 ![Image of Axate Page Notice](../.assets/images/axate-page-notice.png)
 
 
+```
+# Axate Contribution Banner - Add this anywhere in the post. 
+data-selector-banner-contribution=".AxateContributionBanner">
+<div class="AxateContributionBanner"></div>
+```
 
 ### Next Steps
 
