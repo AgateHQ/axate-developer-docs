@@ -20,13 +20,12 @@ Adding the script is easy, there are two parts that ideally will go into the bod
 <script async src="https://wallet.axate.io/bundle.js"></script>
 
 <div id="axate-wallet" 
-data-selector-premium-content=".single-post .category-premium .entry .main-post-content " 
+data-selector-premium-content=".premium" 
 data-selector-in-page-notice=".axate-notice" 
 </div>
 
 
 ```
-*Please note that the script uses the word “agate” not “axate”*
 
 
 The configuration contains the premium class and Axate-notice class attributes.
