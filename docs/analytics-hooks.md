@@ -9,6 +9,7 @@ The current flow is:
 * `agateInit()` - When Axate script is initialized we fire this event.
 * `agateUserLoggedIn()` - When a user is logged in, happens once on every axate load
 * `agateUserLoggedOut()` - Whe a user does log out.
+* `axateUserHasAccessToContent()` - When a user has access to content
 * `agatePremiumContentRendered()` - When a premium article has been purchased.
 * `axateUserOnFreePeriod()` - When a user is on Free Period.
 
