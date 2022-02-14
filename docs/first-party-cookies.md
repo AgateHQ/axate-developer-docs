@@ -3,9 +3,7 @@
 Control of your own DNS system, ease of creating new CNAMEs and pointing it to our servers.
 
 
-
-## Axate Step-by-Step Guide to setup first party cookie servers
-
+# Axate Step-by-Step Guide to setup first party cookie servers 
 
 1. Go to Cloudflare, create custom hostname for publisher.com, pointing to axate.customers.axate.io
 
