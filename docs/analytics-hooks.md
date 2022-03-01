@@ -25,6 +25,19 @@ function agatePremiumContentRendered() {
 ```
 In this example, a subscription offer is ommited after an Axate User has purchased an article via Axate.
 
+Example: 
+
+```js
+
+let userHasAxateAccount;
+
+function agateUserLoggedIn() {
+
+  userHasAxateAccount = true;
+
+};
+```
+
 
 ### Subscribed Users
 
