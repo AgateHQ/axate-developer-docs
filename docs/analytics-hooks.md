@@ -29,7 +29,7 @@ Example:
 
 ```js
 
-let userHasAxateAccount;
+let userHasAxateAccount = false;
 
 function agateUserLoggedIn() {
 
