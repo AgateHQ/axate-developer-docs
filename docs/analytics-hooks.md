@@ -54,4 +54,12 @@ function axateUserLoggedInWithSubscription() {
 
 TODO: 
  - click on topup
- - 
+
+
+
+
+```js
+function loginBaylissUser() {
+  openLoginPopup("user@user.com");
+};
+```
