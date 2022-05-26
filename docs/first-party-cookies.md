@@ -9,15 +9,17 @@ Control of your own DNS system, ease of creating new CNAMEs and pointing it to o
 
 axate-api.publisher.com	CNAME	1 hour	 axate.customers.axate.io.
 
-2. validate with publisher on their DNS system
+2. Validate with publisher on their DNS system
+
+
+1. On AWS, Crete new certificate and validate them with Publisher
+
+1.1 Request *.publisher.com
+
+--- 
 
 3. Create same entry on heroku pointing to the CNAME of publisher, axate-api.publisher.com
 
-
-
-4. On AWS, Crete new certificate and validate them.
-
-1.1 Request *.publisher.com
 
 3. Create cloudfront pointing our accounts page
 
@@ -38,12 +40,13 @@ Certificate validation TXT value
 ca3-564d91dc5e344b539a31ac17a326d560
 
 
-
 Hostname pre-validation TXT name
 _cf-custom-hostname.axate.musicomh.com
 
 Hostname pre-validation TXT value
 17a9e1fa-e464-4a5a-8f8c-0dff34a8712e
+
+Also AWS certificatae validation values should go here
 
 
 Thank you
