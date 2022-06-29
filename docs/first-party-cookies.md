@@ -2,13 +2,12 @@
 
 Control of your own DNS system, ease of creating new CNAMEs and pointing it to our servers.
 
-
 # Axate Step-by-Step Guide to setup first party cookie servers 
 
 Step #1  Create a custom hostname
 =========================================================================================
 
-1. Go to Cloudflare https://www.cloudflare.com
+1.Go to Cloudflare https://www.cloudflare.com
 1.2. Login with provided credentials
 1.3. Select Domain "axate.io"
 1.4. On the left side bar, select "SSL/TSL" feature.
@@ -66,7 +65,7 @@ Step #4 Create cloudfront pointing our accounts page
 
 4.3 Create a distribution
 4.3.1 Origin Section
-4.3.1.1 Enter the origin (this coressponds to the live example).
+4.3.1.1 Enter the origin domain (this coressponds to the live example) or follow the table:
 
 Domains
 
@@ -85,21 +84,16 @@ Domains
   </tr>
 </table>
 
-
-
-
-
-
-4. link it up in publisher's DNS system.
+4.3.1.2. Scroll down to the settings section on the same page
+4.3.1.3. Locate: Custom SSL certificate - optional
+4.3.1.4. Select the corresponding publisher domain certificate, it will only show if it has been validated with the publisher from the previous steps.
+4.3.2. Click orange button to "Create Distribution".
+4.3.3. On sucessfully created a distribution link up it on the publisher's DNS.
 
 accounts.publisher.com	CNAME	1 hour	 1234567x.cloudfront.net.
 
-=== 
 
-MUST DO
----- Create a dynamic code on the app side to change between domains. 
-
-
+Email format to follow for the publishers; 
 
 Dear 'Publisher',
 
