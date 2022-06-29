@@ -5,52 +5,97 @@ Control of your own DNS system, ease of creating new CNAMEs and pointing it to o
 
 # Axate Step-by-Step Guide to setup first party cookie servers 
 
-1. Go to Cloudflare, select domain axat.eio and on the right select SSL/TSL feature and then "custom hostnames" create custom hostname for publisher.com, pointing to axate.customers.axate.io
+Step #1  Create a custom hostname
+=========================================================================================
 
-An example may look like this: axate-api.publisher.com	CNAME	1 hour	 axate.customers.axate.io.
+1. Go to Cloudflare https://www.cloudflare.com
+1.2. Login with provided credentials
+1.3. Select Domain "axate.io"
+1.4. On the left side bar, select "SSL/TSL" feature.
+ 1.4.1. Select "custom hostnames"
+ 1.4.2. Create a custom hostname for publisher.com, pointing to axate.customers.axate.io
+ 
+### Example ###
 
---- Provided screenshots here .... 
+Add Custom Hostname 
+- Enter the publisher domain and click "save"
 
-![image](https://user-images.githubusercontent.com/22083512/176175970-f590125a-df4e-4326-a908-69d5fa8416e6.png)
+![image](https://user-images.githubusercontent.com/22083512/176407582-e227c19d-3052-480e-940b-18e9b06e4185.png)
 
-----
+1.5. Validate TXT with publisher on their DNS system
 
-2. Validate with publisher on their DNS system
+Now take the DNS TXT fields provided on creation and send it over to the publisher to verify.
 
-SEND THE TXT validation from cloudflare 
-
-After successful validation from the publisher's side continue on:
-
-1. On AWS, create a new certificate and validate them with Publisher
-
---- Login to AWS - Search for Certificate Manager
--- Request a certificate
--- 
-1.1 Request *.publisher.com
-
-Then send the DNS CNAME settings to validate with the publisher.
---- 
-
-3. Create same entry on heroku pointing to the CNAME of publisher, axate-api.publisher.com
-
-????
-
-Login to Heroku, select the organization repo instead personal, then go to agate-io app 
+1.5.1 After a successful validation from the publisher's side.
 
 
-Add domain 
+Step #2 - On AWS, create a new certificate and validate it with the Publisher
+============================================================================================
 
-axate-api.{{publisher.com}}
-Example: axate-api.rotherhamadvertiser.co.uk
-Then DNS target value to provide to the publisher to create a subdomain to axate-api.publisher.com 
+2. Login to AWS, locate AWS Management Console. 
+2.1. Expand All Services, look for "Certificate Manager"
+2.2. On Certificate Manager opened, look for "Request Certificate".
+ 2.2.1. Certificate type - "Request a public certificate"
+ 2.2.2. Enter Domain Name "*.publisher.com"
+ 2.2.3. Select validation method: "DNS validation - recommended"
+ 2.2.4. Click orange button "Request"
+ 2.2.5. Send the DNS CNAME settings to validate with the publisher.
+ 
+
+Step #3 Create same entry on heroku pointing to the CNAME of publisher, axate-api.publisher.com
+=============================================================================================
+
+3. Login to Heroku
+  3.1. Select Organization instead of Personal
+  3.2. Select "agate-io"
+  3.3. Add Domain 
+      axate-api.publisher.com
+      Example: axate-api.rotherhamadvertiser.co.uk
+      Then DNS target value to provide to the publisher to create a subdomain to axate-api.publisher.com 
+
+Step #4 Create cloudfront pointing our accounts page
+=============================================================================================
+
+4. Login to AWS, locate AWS Management Console. 
+4.1. Expand All Services, look for "CloudFront"
+4.2. Create 3 distributions, for each pointing to the different locations.
+
+### LIVE EXAMPLE ###
+
+![image](https://user-images.githubusercontent.com/22083512/176415866-ba9e75ff-4a52-4b35-a1da-2c3585936166.png)
+
+4.3 Create a distribution
+4.3.1 Origin Section
+4.3.1.1 Enter the origin (this coressponds to the live example).
+
+Domains
+
+<table>
+  <tr>
+    <th>page-notices.{publisher.com}</th>
+    <th>accounts.{publisher.com}</th>
+    <th>account.{publisher.com}</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+</table>
 
 
 
-3. Create cloudfront pointing our accounts page
 
-Go to AWS -> CloudFront -> and create the three different distributions for each poiting to the different locations.
-
-![image](https://user-images.githubusercontent.com/22083512/176179750-13ea99fd-9b7d-4a9a-a9da-2ba6cc32bd4c.png)
 
 
 4. link it up in publisher's DNS system.
@@ -85,3 +130,13 @@ Also AWS certificatae validation values should go here
 
 
 Thank you
+
+
+
+
+
+
+
+An example may look like this: axate-api.publisher.com	CNAME	1 hour axate.customers.axate.io.
+
+
