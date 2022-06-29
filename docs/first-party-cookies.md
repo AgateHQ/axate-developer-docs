@@ -25,9 +25,6 @@ Add Custom Hostname
 
 Now take the DNS TXT fields provided on creation and send it over to the publisher to verify.
 
-1.5.1 After a successful validation from the publisher's side.
-
-
 Step #2 - On AWS, create a new certificate and validate it with the Publisher
 ============================================================================================
 
