@@ -7,18 +7,12 @@ Control of your own DNS system, ease of creating new CNAMEs and pointing it to o
 Step #1  Create a custom hostname
 =========================================================================================
 
-1. A numbered list
-    1. A nested numbered list
-    2. Which is numbered
-2. Which is numbered
-
-
 1. Go to Cloudflare https://www.cloudflare.com
-    1.2 Login with provided credentials
-    1.3 Select Domain "axate.io"
-    1.4 On the left side bar, select "SSL/TSL" feature.
-         1.4.1 Select "custom hostnames"
-        1.4.2 Create a custom hostname for publisher.com, pointing to axate.customers.axate.io
+   1 Login with provided credentials
+    2 Select Domain "axate.io"
+    3 On the left side bar, select "SSL/TSL" feature.
+         1 Select "custom hostnames"
+         2 Create a custom hostname for publisher.com, pointing to axate.customers.axate.io
  
 ### Example ###
 
