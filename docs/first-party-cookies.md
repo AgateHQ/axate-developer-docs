@@ -90,7 +90,11 @@ Domains
 accounts.publisher.com	CNAME	1 hour	 1234567x.cloudfront.net.
 
 
-Email format to follow for the publishers; 
+
+
+
+
+## Email format to follow for the publishers; 
 
 Dear 'Publisher',
 
