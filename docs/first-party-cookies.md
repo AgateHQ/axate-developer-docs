@@ -4,7 +4,7 @@ Control of your own DNS system, ease of creating new CNAMEs and pointing it to o
 
 # Axate Step-by-Step Guide to setup first party cookie servers 
 
-Step #1  Create a custom hostname
+##Step #1  Create a custom hostname
 =========================================================================================
 
 1. Go to Cloudflare https://www.cloudflare.com
@@ -25,7 +25,7 @@ Add Custom Hostname
 
 Now take the DNS TXT fields provided on creation and send it over to the publisher to verify.
 
-Step #2 - On AWS, create a new certificate and validate it with the Publisher
+##Step #2 - On AWS, create a new certificate and validate it with the Publisher
 ============================================================================================
 
 2. Login to AWS, locate AWS Management Console. 
@@ -38,7 +38,7 @@ Step #2 - On AWS, create a new certificate and validate it with the Publisher
  2.2.5. Send the DNS CNAME settings to validate with the publisher.
  
 
-Step #3 Create same entry on heroku pointing to the CNAME of publisher, axate-api.publisher.com
+##Step #3 Create same entry on heroku pointing to the CNAME of publisher, axate-api.publisher.com
 =============================================================================================
 
 3. Login to Heroku
@@ -49,7 +49,7 @@ Step #3 Create same entry on heroku pointing to the CNAME of publisher, axate-ap
       Example: axate-api.rotherhamadvertiser.co.uk
       Then DNS target value to provide to the publisher to create a subdomain to axate-api.publisher.com 
 
-Step #4 Create cloudfront pointing our accounts page
+##Step #4 Create cloudfront pointing our accounts page
 =============================================================================================
 
 4. Login to AWS, locate AWS Management Console. 
