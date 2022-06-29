@@ -8,11 +8,11 @@ Step #1  Create a custom hostname
 =========================================================================================
 
 1. Go to Cloudflare https://www.cloudflare.com
-   1 Login with provided credentials
-    2 Select Domain "axate.io"
-    3 On the left side bar, select "SSL/TSL" feature.
-         1 Select "custom hostnames"
-         2 Create a custom hostname for publisher.com, pointing to axate.customers.axate.io
+   1.2 Login with provided credentials
+   1.3 Select Domain "axate.io"
+   1.4 On the left side bar, select "SSL/TSL" feature.
+         1.4.1 Select "custom hostnames"
+         1.4.2 Create a custom hostname for publisher.com, pointing to axate.customers.axate.io
  
 ### Example ###
 
