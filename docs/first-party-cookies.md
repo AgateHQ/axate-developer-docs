@@ -73,23 +73,15 @@ Domains
 <table>
   <tr>
     <th>page-notices.{publisher.com}</th>
-    <th>accounts.{publisher.com}</th>
-    <th>account.{publisher.com}</th>
-  </tr>
-  <tr>
-    <td>Alfreds Futterkiste</td>
     <td>Maria Anders</td>
-    <td>Germany</td>
   </tr>
   <tr>
-    <td>Centro comercial Moctezuma</td>
+    <th>accounts.{publisher.com}</th>
+    <td>Maria Anders</td>
+  </tr>
+  <tr>
+    <th>account.{publisher.com}</th>
     <td>Francisco Chang</td>
-    <td>Mexico</td>
-  </tr>
-  <tr>
-    <td>Ernst Handel</td>
-    <td>Roland Mendel</td>
-    <td>Austria</td>
   </tr>
 </table>
 
