@@ -72,16 +72,16 @@ Domains
 
 <table>
   <tr>
-    <th>page-notices.{publisher.com}</th>
-    <td>Maria Anders</td>
+    <th>account.{publisher.com}</th>
+    <td>account.axate.io.s3.eu-west-2.amazonaws.com</td>
   </tr>
   <tr>
     <th>accounts.{publisher.com}</th>
-    <td>Maria Anders</td>
+    <td>accounts.axate.io.s3-website.eu-west-2.amazonaws.com</td>
   </tr>
   <tr>
-    <th>account.{publisher.com}</th>
-    <td>Francisco Chang</td>
+    <th>page-notices.{publisher.com}</th>
+    <td>page-notices-production.s3.eu-west-2.amazonaws.com</td>
   </tr>
 </table>
 
