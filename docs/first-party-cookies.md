@@ -120,10 +120,3 @@ Thank you
 
 
 
-
-
-
-
-An example may look like this: axate-api.publisher.com	CNAME	1 hour axate.customers.axate.io.
-
-
