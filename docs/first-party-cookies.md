@@ -7,11 +7,10 @@ Control of your own DNS system, ease of creating new CNAMEs and pointing it to o
 Step #1  Create a custom hostname
 =========================================================================================
 
-
- Markup : 1. A numbered list
-              1. A nested numbered list
-              2. Which is numbered
-          2. Which is numbered
+1. A numbered list
+    1. A nested numbered list
+    2. Which is numbered
+2. Which is numbered
 
 
 1.Go to Cloudflare https://www.cloudflare.com
