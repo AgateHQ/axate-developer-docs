@@ -35,3 +35,22 @@ email is md5 encrypted
   }
 }
 ```
+
+Current object being sent after every user interaction to specific publishers API
+
+```ruby
+
+    Email: "test@email.com",
+    Publication: "XYZ",
+    UID: "hashed_id",
+    RegistrationDate: "2018-09-28T12:06:10.287+01:00",
+    HasAxateWallet: "2018-09-28T12:06:10.287+01:00",
+    PaymentDetails: {
+      PurchasedArticleCount: "21",
+      LastPurchasedDate: "2018-09-28T12:06:10.287+01:00",
+      BrandPurchasedOn: "XYZ",
+      NumberPasses: "2"
+    }
+        
+```
+
