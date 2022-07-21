@@ -2,7 +2,7 @@ Current API for retrieval of users data
 
 email is md5 encrypted
 
-```json
+```ruby
 
 {
   id: "182",
