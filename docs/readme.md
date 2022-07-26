@@ -66,6 +66,35 @@ data-selector-banner-contribution=".AxateContributionBanner">
 <div class="AxateContributionBanner"></div>
 ```
 
+## Wordpress
+
+Editing the functions.php file
+
+```php
+
+function add_content_after($content) {
+ if ( has_tag('premium') ) { 
+	 $before_content = '<div class="premium">';
+      $after_content = '</div><div class="axate-notice"></div>';
+      $fullcontent = $before_content . $content . $after_content;
+ } else {
+	 $fullcontent = $content;
+ }
+       return $fullcontent;
+
+}
+add_filter('the_content', 'add_content_after');
+
+
+function add_axate() {
+    ?>
+ <script async src="https://wallet.axate.io/bundle.js"></script><div id="axate-wallet" data-selector-premium-content=".premium" data-selector-article-content=".article" data-selector-in-page-notice=".axate-notice"></div>
+    <?php
+}
+add_action('wp_head', 'add_axate');
+
+```
+
 ### Next Steps
 
 2. [Providing an API for Content Retrieval](./content-api.md)
