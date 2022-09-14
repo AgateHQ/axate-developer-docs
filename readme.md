@@ -38,6 +38,12 @@
 
 * <del>[Facebook Instant Articles (TBA)](./docs/research/facebook-instant-articles.md)</del>
 
+
+## SEO Considerations
+* <del>[Troubleshooting Google Search Results for Paywalled/Axate Paid Articles](https://developers.google.com/search/docs/advanced/structured-data/paywalled-content
+)</del>
+
+
 ## Roadmap
 
 > Axate will be partnering with CMS and technology providers in the near future.<br />
