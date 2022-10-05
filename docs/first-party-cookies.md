@@ -130,3 +130,6 @@ Thank you
 - Email links 
 
 
+- Update new domain on Google Analytics. 
+
+
