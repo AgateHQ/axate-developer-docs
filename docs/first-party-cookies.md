@@ -96,26 +96,28 @@ accounts.publisher.com	CNAME	1 hour	 1234567x.cloudfront.net.
 
 
 
-## Email format to follow for the publishers; 
+## Email format to follow for the publishers/it support of DNS system; 
 
-Dear 'Publisher',
+Dear Publisher/Support,
+ 
+Would you please help me add a CNAME record to my domain's DNS records?
+ 
 
-Please setup the following DNS on your side to enable first party cookies with Axate, as soon as you do let us know and we can send you a few more details.
 
 Certificate validation TXT name
 axate.musicomh.com
 
 Certificate validation TXT value
-ca3-564d91dc5e344b539a31ac17a326d560
+ca3-564d91dc5e3s44b539a31ac17a326d560
 
 
 Hostname pre-validation TXT name
 _cf-custom-hostname.axate.musicomh.com
 
 Hostname pre-validation TXT value
-17a9e1fa-e464-4a5a-8f8c-0dff34a8712e
+17a9se1fa-e464-4a5a-8f8c-0dff34a8712e
 
-Also AWS certificatae validation values should go here
+Please setup the following DNS on your side to enable first party cookies with Axate, as soon as you do let us know and we can send you a few more details.
 
 
 Thank you
