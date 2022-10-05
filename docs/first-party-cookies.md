@@ -120,9 +120,13 @@ Thank you
 
 
 
-## Developer Only Updates
+## Developer Only Updates
 
- - Front-end: Update file.json with new publisher.com domains and account/page-notices url routes.
+- Front-end: Update file.json with new publisher.com domains and account/page-notices url routes.
  
- - Back-end: Update registration/login controller, to account for new domains, update mailer links
+- Back-end: Update registration/login controller, to account for new domains, update mailer links
+
+- Login link on admin dashboard/ change password link 
+- Email links 
+
 
