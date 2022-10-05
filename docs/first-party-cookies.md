@@ -2,6 +2,8 @@
 
 Control of your own DNS system, ease of creating new CNAMEs and pointing it to our servers.
 
+If you have any blacklist/whitelist or firewalls that restrict domains internally, please consider them before implementing this!
+
 # Axate Step-by-Step Guide to setup first party cookie servers 
 
 Step #1  Create a custom hostname
@@ -131,5 +133,9 @@ Thank you
 
 
 - Update new domain on Google Analytics. 
+
+
+
+
 
 
