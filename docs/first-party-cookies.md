@@ -86,11 +86,15 @@ Domains
 - 4.3.1.2. Scroll down to the settings section on the same page
 - 4.3.1.3. Locate: Custom SSL certificate - optional
 - 4.3.1.4. Select the corresponding publisher domain certificate, it will only show if it has been validated with the publisher from the previous steps.
+
+IMPORTANT: (Default root object - optional) set this to "index.html" do not add "/" only "index.html". Otherwise, this will trigget an XML page with an error "Access Denied" 
+
+![image](https://user-images.githubusercontent.com/22083512/194289938-f7cc42bf-d28c-45fb-b48c-c0502f3341c1.png)
+
 - 4.3.2. Click orange button to "Create Distribution".
 - 4.3.3. On sucessfully created a distribution link up it on the publisher's DNS.
 
 accounts.publisher.com	CNAME	1 hour	 1234567x.cloudfront.net.
-
 
 
 
@@ -127,6 +131,10 @@ Thank you
 ## Developer Code-Only Updates for every new Domain
 
 - Front-end: Update file.json with new publisher.com domains and account/page-notices url routes.
+  - Wallet
+  - Auth views
+  - Page Notices
+  - Account
  
 - Back-end: Update registration/login controller, to account for new domains, update mailer links
 
