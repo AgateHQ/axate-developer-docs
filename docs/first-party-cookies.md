@@ -87,7 +87,7 @@ Domains
 - 4.3.1.3. Locate: Custom SSL certificate - optional
 - 4.3.1.4. Select the corresponding publisher domain certificate, it will only show if it has been validated with the publisher from the previous steps.
 
-IMPORTANT: (Default root object - optional) set this to "index.html" do not add "/" only "index.html". Otherwise, this will trigget an XML page with an error "Access Denied" 
+IMPORTANT: (Default root object - optional) set this to "index.html" do not add "/" only "index.html". Otherwise, this will trigger an XML page with an error "Access Denied" 
 
 ![image](https://user-images.githubusercontent.com/22083512/194289938-f7cc42bf-d28c-45fb-b48c-c0502f3341c1.png)
 
