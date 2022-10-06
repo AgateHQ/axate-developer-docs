@@ -83,11 +83,11 @@ Domains
   </tr>
 </table>
 
-4.3.1.2. Scroll down to the settings section on the same page
-4.3.1.3. Locate: Custom SSL certificate - optional
-4.3.1.4. Select the corresponding publisher domain certificate, it will only show if it has been validated with the publisher from the previous steps.
-4.3.2. Click orange button to "Create Distribution".
-4.3.3. On sucessfully created a distribution link up it on the publisher's DNS.
+- 4.3.1.2. Scroll down to the settings section on the same page
+- 4.3.1.3. Locate: Custom SSL certificate - optional
+- 4.3.1.4. Select the corresponding publisher domain certificate, it will only show if it has been validated with the publisher from the previous steps.
+- 4.3.2. Click orange button to "Create Distribution".
+- 4.3.3. On sucessfully created a distribution link up it on the publisher's DNS.
 
 accounts.publisher.com	CNAME	1 hour	 1234567x.cloudfront.net.
 
