@@ -6,26 +6,6 @@ If you have any blacklist/whitelist or firewalls that restrict domains internall
 
 # Axate Step-by-Step Guide to setup first party cookie servers 
 
-Step #1  Create a custom hostname
-=========================================================================================
-
-1. Go to Cloudflare https://www.cloudflare.com
-2. Login with provided credentials
-3. Select Domain "axate.io"
-4. On the left side bar, select "SSL/TSL" feature.
-5. Select "custom hostnames"
-6. Create a custom hostname for publisher.com, pointing to axate.customers.axate.io
- 
-### Example ###
-
-Add Custom Hostname 
-- Enter the publisher domain and click "save"
-
-![image](https://user-images.githubusercontent.com/22083512/176407582-e227c19d-3052-480e-940b-18e9b06e4185.png)
-
-1.5. Validate TXT with publisher on their DNS system
-
-Now take the DNS TXT fields provided on creation and send it over to the publisher to verify.
 
 Step #2 - On AWS, create a new certificate and validate it with the Publisher
 ============================================================================================
@@ -149,3 +129,27 @@ Thank you
 
 
 
+
+Remove:
+
+
+Step #1  Create a custom hostname
+=========================================================================================
+
+1. Go to Cloudflare https://www.cloudflare.com
+2. Login with provided credentials
+3. Select Domain "axate.io"
+4. On the left side bar, select "SSL/TSL" feature.
+5. Select "custom hostnames"
+6. Create a custom hostname for publisher.com, pointing to axate.customers.axate.io
+ 
+### Example ###
+
+Add Custom Hostname 
+- Enter the publisher domain and click "save"
+
+![image](https://user-images.githubusercontent.com/22083512/176407582-e227c19d-3052-480e-940b-18e9b06e4185.png)
+
+1.5. Validate TXT with publisher on their DNS system
+
+Now take the DNS TXT fields provided on creation and send it over to the publisher to verify.
