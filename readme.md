@@ -35,6 +35,10 @@
 * [Browser Support](./docs/browser-support.md)
 
 ## SEO Considerations
+
+Axate’s paywall can potentially appear in Google News results for paid content. There are tactics you can employ to ensure it isn’t shown, and to ensure your pages appear correctly on search results. We’ve put together some information on these tactics and how Google and Google News treat paywalled content. We recommend that you read the below and check that these settings are applied across Google and Google News. Please let us know if you need any help with this. 
+
+
 * [Troubleshooting Google Search Results for Paywalled/Axate Paid Articles](https://developers.google.com/search/docs/advanced/structured-data/paywalled-content)
 
 
