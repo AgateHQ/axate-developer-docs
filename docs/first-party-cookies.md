@@ -108,6 +108,15 @@ Thank you
 
 
 
+Step #5 Create Braintree apple-pay accounts pages certificates
+=============================================================================================
+Login to braintree > Settings > Processing
+Update the new domains to have:
+
+
+- accounts.publisher.com
+
+
 ## Developer Code-Only Updates for every new Domain
 
 - Front-end: Update file.json with new publisher.com domains and account/page-notices url routes.
