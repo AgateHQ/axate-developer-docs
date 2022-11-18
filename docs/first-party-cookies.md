@@ -7,20 +7,27 @@ If you have any blacklist/whitelist or firewalls that restrict domains internall
 # Axate Step-by-Step Guide to setup first party cookie servers 
 
 
-Step #2 - On AWS, create a new certificate and validate it with the Publisher
+Step #1 - On AWS, create a new certificate and validate it with the Publisher
 ============================================================================================
 
 2. Login to AWS, locate AWS Management Console. 
-2.1. Expand All Services, look for "Certificate Manager"
+3. 
+4.1. Expand All Services, look for "Certificate Manager"
+
 2.2. On Certificate Manager opened, look for "Request Certificate".
+
  2.2.1. Certificate type - "Request a public certificate"
+ 
  2.2.2. Enter Domain Name "*.publisher.com"
+ 
  2.2.3. Select validation method: "DNS validation - recommended"
+ 
  2.2.4. Click orange button "Request"
+ 
  2.2.5. Send the DNS CNAME settings to validate with the publisher.
  
 
-Step #3 Create same entry on heroku pointing to the CNAME of publisher, axate-api.publisher.com
+Step #2 Create same entry on heroku pointing to the CNAME of publisher, axate-api.publisher.com
 =============================================================================================
 
 3. Login to Heroku
