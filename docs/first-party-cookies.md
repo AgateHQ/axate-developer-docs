@@ -133,6 +133,7 @@ Update the new domains to have:
   - Account
  
 - Back-end: Update registration/login controller, to account for new domains, update mailer links
+- Example: https://github.com/AgateHQ/agate/commit/236f22ddf8da728b17d53ed793c4bc80bf4081e3
 
 - Login link on admin dashboard/ change password link 
 - Email links 
