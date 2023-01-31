@@ -142,7 +142,7 @@ Update the new domains to have:
 - Update new domain on Google Analytics. 
 
 
-Additionals
+## Additionals
 
 As soon as the consent event occurs, and our partner is the one that’s being chosen, we need to react to it to disable the GA tracking
 
