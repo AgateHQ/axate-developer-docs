@@ -1,10 +1,19 @@
-# Selectively Showing Axate to specific users
+# Enabling Selective Display of Axate
 
-To display Axate to only a select number of users, we reccomend dropping a cookie on your end, or any other feature you can quickly enable and mantain present.
+To provide a tailored experience and display Axate only to a specific subset of users, we recommend implementing a cookie-based mechanism or any other feature that can be quickly enabled and maintained.
 
-An example flow would be, a user is presented with an Axate login URL such as `https://example.com/set_axate_cookie?url_from=example.com/` as soon as he hits the URL a cookie woudl be set, for example `axate_display=true` and the user would be redirected to either homepage of the site or the article he was on previously, via `url_from` parameters.
+## Example Workflow: 
+1. User Interaction: A user is directed to an Axate login URL, such as https://example.com/set_axate_cookie?url_from=example.com/.
+2. Cookie Creation: Upon accessing the URL, a cookie is set (e.g., axate_display=true).
+3. Redirection: The user is then redirected to either the homepage of the site or the article they were previously viewing, as determined by the url_from parameters.
+4. Script Execution: On every page, a script checks for the existence of the axate_display cookie.
+5. Loading Axate: If the cookie is found, the main Axate script is loaded, enabling its full functionalities.
 
-On every page a script similar to this would be checking the existence of such cookie and load the main Axate script to enable it's full functionalities.
+## Implementation Details
+
+Below is a JavaScript code snippet that can be used to check for the existence of the axate_display cookie and load the main Axate script accordingly:
+
+
 
 ```javascript
 if (getCookie('axate_display')) {
