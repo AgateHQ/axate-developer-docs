@@ -13,6 +13,20 @@ The current flow is:
 * `agatePremiumContentRendered()` - When a premium article has been purchased.
 * `axateUserOnFreePeriod()` - When a user is on Free Period.
 
+Axate journey hooks - For Axate hooks to work you have to have Axate Wallet available on every page the hook is called.
+
+In order to use use it, you use the JavaScript window object.
+
+Example: window.axateContribute()
+
+* `axateContribute()` - Contribution journey
+* `axateDayPass()` - Day Pass Journey
+* `axateRegister()` - Registration Journey
+* `axateSubscribe()` - Subscription Journey
+* `axateSignOn()` - Login Journey
+
+The above is equivalent to clicking a button on the Axate paywall UI which
+will direct you on the Axate journey to make a payment with all the required parameters for Axate to function as normal. 
 
 Example: 
 
