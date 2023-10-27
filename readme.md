@@ -26,6 +26,7 @@
 ### Axate AMP
 * [Axate AMP Overview](./docs/amp/readme.md)
 * [Integrating Axate AMP](./docs/amp/amp-integration.md)
+* [Marketing Consents](./docs/marketing-consents.md)
 * <del>[Axate AMP and WordPress (TBA)](./docs/amp/amp-and-wordpress.md)</del>
 * <del>[Troubleshooting AMP <sup>α</sup>](./docs/amp/troubleshooting-amp.md)</del>
 
