@@ -23,13 +23,6 @@
 5. [Testing & Go Live](./docs/testing-and-go-live.md)
 6. <del>[Troubleshooting (WIP)](./docs/troubleshooting.md)</del>
 
-### Axate AMP
-* [Axate AMP Overview](./docs/amp/readme.md)
-* [Integrating Axate AMP](./docs/amp/amp-integration.md)
-* [Marketing Consents](./docs/marketing-consents.md)
-* <del>[Axate AMP and WordPress (TBA)](./docs/amp/amp-and-wordpress.md)</del>
-* <del>[Troubleshooting AMP <sup>α</sup>](./docs/amp/troubleshooting-amp.md)</del>
-
 
 ## General
 
@@ -41,6 +34,17 @@ Axate’s paywall can potentially appear in Google News results for paid content
 
 
 * [Troubleshooting Google Search Results for Paywalled/Axate Paid Articles](https://developers.google.com/search/docs/advanced/structured-data/paywalled-content)
+
+
+### Axate AMP
+
+As of November 2023 we decided to phase out AMP, if you still run an AMP website we can provide custom solutions for you.
+
+* [Axate AMP Overview](./docs/amp/readme.md)
+* [Integrating Axate AMP](./docs/amp/amp-integration.md)
+* [Marketing Consents](./docs/marketing-consents.md)
+* <del>[Axate AMP and WordPress (TBA)](./docs/amp/amp-and-wordpress.md)</del>
+* <del>[Troubleshooting AMP <sup>α</sup>](./docs/amp/troubleshooting-amp.md)</del>
 
 
 ## Research &amp; Development
