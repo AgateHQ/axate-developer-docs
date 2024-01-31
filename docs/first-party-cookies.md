@@ -146,5 +146,3 @@ If possible to use this API, or any similar to pass an api call, to
 GET axate.io/api/do_not_track?uuid={unique_user_id_generated_at_that_instance}
 
 We will handle this with care and disable for that device/user
-
-
