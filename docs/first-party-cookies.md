@@ -83,17 +83,11 @@ IMPORTANT: (Default root object - optional) set this to "index.html" do not add 
 
 accounts.publisher.com	CNAME	1 hour	 1234567x.cloudfront.net.
 
-
-
-
-
 ## Email format to follow for the publishers/it support of DNS system; 
-
+```
 Dear Publisher/Support,
  
 Would you please help me add a CNAME record to my domain's DNS records?
- 
-
 
 Certificate validation TXT name
 axate.musicomh.com
@@ -110,9 +104,8 @@ Hostname pre-validation TXT value
 
 Please setup the following DNS on your side to enable first party cookies with Axate, as soon as you do let us know and we can send you a few more details.
 
-
 Thank you
-
+```
 
 
 Step #5 Create Braintree apple-pay accounts pages certificates
