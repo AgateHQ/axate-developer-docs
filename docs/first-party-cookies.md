@@ -119,7 +119,7 @@ Update the new domains to have:
 
 ## Developer Code-Only Updates for every new Domain
 
-- Front-end: Update file.json with new publisher.com domains and account/page-notices url routes.
+- Front-end: Update domains.json with new publisher.com domains and account/page-notices url routes, across the following projects
   - Wallet
   - Auth views
   - Page Notices
