@@ -1,17 +1,17 @@
 # Javascripts Hooks
 
-Axate provides with various functions to coordinate the flow of the User that sees an Axate wallet, before or after he logs in and when a premium content has been displayed to him.
+Axate offers various functions to manage user interactions with the Axate wallet, both before and after login, and when premium content is accessed.
 
-These functions can be plugged into, and be used to any purpose on your end, like set a user Cookie, track analytical data or simply display more or less information to an Axate user.
+These functions can be integrated for purposes such as setting user cookies, tracking analytical data, or controlling the amount of information displayed to an Axate user.
 
-The current flow is:
+The current flow includes the following functions:
 
-* `agateInit()` - When Axate script is initialized we fire this event.
-* `agateUserLoggedIn()` - When a user is logged in, happens once on every axate load
-* `agateUserLoggedOut()` - Whe a user does log out.
-* `axateUserHasAccessToContent()` - When a user has access to content
-* `agatePremiumContentRendered()` - When a premium article has been purchased.
-* `axateUserOnFreePeriod()` - When a user is on Free Period.
+* `agateInit()`: Triggered when the Axate script is initialized.
+* `agateUserLoggedIn()`: Triggered once each time a user is logs in.
+* `agateUserLoggedOut()`: Triggered when a user logs out.
+* `axateUserHasAccessToContent()`: Triggered when a user gains access to content.
+* `agatePremiumContentRendered()`: Triggered when a premium article is purchased.
+* `axateUserOnFreePeriod()`: Triggered when a user is in a free period.
 
 Axate journey hooks - For Axate hooks to work you have to have Axate Wallet available on every page the hook is called.
 
