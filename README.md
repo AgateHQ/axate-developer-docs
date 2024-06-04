@@ -1,4 +1,5 @@
-<img src="https://axate-amp.s3.eu-west-2.amazonaws.com/images/logo-axate-dark-transparent.svg" alt="drawing" alt="Axate" width="100" />
+<img src="https://images.squarespace-cdn.com/content/v1/602e7fb8e0109735215bf464/a6495b11-eecf-4e66-bd14-ba39977d3f25/Untitled+%282000+x+462+px%29+%282300+x+462+px%29+%281%29.png?format=1500w" alt="drawing" alt="Axate" width="100" />
+
 
 ### Every publisher needs better ways to make money.
 
