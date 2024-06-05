@@ -108,7 +108,7 @@ Thank you
 ```
 
 ## Step #5 
-### Create Braintree apple-pay accounts pages certificates
+### Create Braintree (PayPal) Apple-pay accounts pages certificates
 
 ---
 
