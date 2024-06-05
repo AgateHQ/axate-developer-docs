@@ -11,14 +11,33 @@ If you have any blocklist / allowlist or firewalls that restrict domains interna
 
 ---
 
-1. Login to `AWS`, locate `AWS` Management Console. 
-2. Expand All Services, look for "Certificate Manager"
-3. On Certificate Manager opened, look for "Request Certificate".
-4. Certificate type - "Request a public certificate"
-5. Enter Domain Name "`*.publisher.com`"
-6. Select validation method: "`DNS` validation - recommended"
-7. Click orange button "Request"
-8. Send the `DNS CNAME` settings to validate with the publisher.
+1. Login to `AWS`, locate `AWS` Management Console.
+
+  <img width="961" alt="" src="https://github.com/AgateHQ/axate-developer-docs/assets/71266765/dd028542-a196-4c86-a1e5-3c576e7b60e8">
+
+3. Expand All Services, look for "Certificate Manager"
+4. On Certificate Manager opened, look for "Request Certificate".
+
+<img width="909" alt="" src="https://github.com/AgateHQ/axate-developer-docs/assets/71266765/358f1e55-3c2c-4ac3-bd7c-84bbadfc20c3">
+  
+6. Certificate type - "Request a public certificate"
+
+<img width="674" alt="" src="https://github.com/AgateHQ/axate-developer-docs/assets/71266765/b4e9bec4-7e75-491b-a8bf-0824654b23f1">
+
+8. Enter Domain Name "`*.publisher.com`"
+
+   <img width="674" alt="" src="https://github.com/AgateHQ/axate-developer-docs/assets/71266765/5217168c-4783-40dd-b269-6f5ad55e0bb1">
+
+10. Select validation method: "`DNS` validation - recommended"
+
+   
+   <img width="674" alt="" src="https://github.com/AgateHQ/axate-developer-docs/assets/71266765/58fcc2c8-03bb-4968-8eaa-9061278bf8b6">
+
+12. Click orange button "Request"
+
+   <img width="676" alt="" src="https://github.com/AgateHQ/axate-developer-docs/assets/71266765/194d98a1-f637-4d3b-b9d1-62d1f407c679">
+
+14. Send the `DNS CNAME` settings to validate with the publisher.
  
 ## Step #2 
 ### Create same entry on heroku pointing to the `CNAME` of publisher, `axate-api.publisher.com`
