@@ -7,6 +7,10 @@ If you have any blocklist / allowlist or firewalls that restrict domains interna
 # Axate Step-by-Step Guide to setup first party cookie servers 
 
 ## Step #1
+
+### Why? 
+Setting up the Frontend repos to be correctly mapped to publisher domains 
+
 ### On `AWS`, create a new certificate and validate it with the Publisher
 
 ---
@@ -40,6 +44,10 @@ If you have any blocklist / allowlist or firewalls that restrict domains interna
 14. Send the `DNS CNAME` settings to validate with the publisher.
  
 ## Step #2 
+
+## Why?
+Setting up the backend to be correctly mapped to publisher domains 
+
 ### Create same entry on heroku pointing to the `CNAME` of publisher, `axate-api.publisher.com`
 
 ---
@@ -53,6 +61,7 @@ If you have any blocklist / allowlist or firewalls that restrict domains interna
 15. Then `DNS` target value to provide to the publisher to create a subdomain to `axate-api.publisher.com`
 
 ## Step #4 
+
 ### Create cloudfront pointing our accounts page
 
 --- 
@@ -127,6 +136,11 @@ Thank you
 ```
 
 ## Step #5 
+
+## Why?
+Setting up payment providers to work with new publisher domains 
+
+
 ### Create Braintree (PayPal) Apple-pay accounts pages certificates
 
 ---
@@ -137,6 +151,9 @@ Update the new domains to have:
 - `accounts.publisher.com`
 
 ## Developer Code-Only Updates for every new Domain
+
+## Why?
+Setup relevant repos to re-direct or reference the correct domains
 
 - Front-end: Update `domains.json` with new `publisher.com` domains and `account/page-notices` url routes, across the following projects
   - `wallet`
