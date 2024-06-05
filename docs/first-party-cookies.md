@@ -171,8 +171,6 @@ Setup relevant repos to re-direct or reference the correct domains
 
 ## Misc
 
-As soon as the consent event occurs, and our partner is the one that’s being chosen, we need to react to it to disable the `GA` tracking
-
 GDPR-Transparency-and-Consent-Framework/IAB Tech Lab - CMP API v2.md at master · InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework
 
 If possible to use this `API`, or any similar to pass an api call, to
