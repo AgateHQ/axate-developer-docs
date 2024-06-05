@@ -70,7 +70,7 @@ If you have any blocklist / allowlist or firewalls that restrict domains interna
 ```
 
 21. Scroll down to the settings section on the same page
-22. Locate: Custom `SSL` certificate (optional)
+22. Locate: Custom `SSL` certificate
 23. Select the corresponding publisher domain certificate, it will only show if it has been validated with the publisher from the previous steps.
 
 IMPORTANT: (Default root object - optional) set this to "`index.html`" do not add "`/`" only "`index.html`". Otherwise, this will trigger an `XML` page with an error "`Access Denied`" 
