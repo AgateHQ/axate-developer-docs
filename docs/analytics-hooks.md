@@ -77,3 +77,88 @@ function loginBaylissUser() {
   openLoginPopup("user@user.com");
 };
 ```
+
+---
+
+## Considerations and integrations
+
+Some publishers may utilise third-party solutions (such as Adobe Experience Manager) to trigger and track analytics. In scenarios where the suggested code is loaded from a third-party domain, the `wallet` which is responsible for triggering these events, will not function as expected. To ensure this wokrs as expected, the code should be integrated into the same domain where the `wallet` is accessible while on the page.
+
+## Why can't we just use `data-` attributes?
+
+Typical we would be able to add `data-axate-login` or something similar to allow analytics to hook onto `DOM` elements with ease, however in this context the `wallet` is within an iframe, so due to security (accessing Elements in a Cross-Origin Iframe) this is not setup.
+
+## We’ve got a race condition, we’re waiting for Axate to load, what can we do?
+
+There are events that can be setup to trigger once the entire page is loaded.
+
+```
+
+// Capture event once the entire page is loaded
+  window.onload = function() {
+    console.log("Page fully loaded"); sendPageLoadEvent();
+};
+
+```
+
+### MutationObserver is another technique:
+
+```
+
+var observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+        mutation.addedNodes.forEach(function(node) {
+            if (node.tagName === 'SCRIPT' && node.src === 'https://example.com/some-script.js') {
+                node.onload = function() {
+                    console.log("Script loaded successfully!");
+                };
+            }
+        });
+    });
+});
+
+observer.observe(document.head, { childList: true });
+
+```
+
+### Promise-based approach is another technique:
+This ensures scripts are loaded in order by using promises.
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Load Example</title>
+</head>
+<body>
+    <script>
+        function loadScript(src) {
+            return new Promise((resolve, reject) => {
+                var script = document.createElement('script');
+                script.src = src;
+                script.onload = () => resolve(src + ' loaded');
+                script.onerror = () => reject(src + ' failed to load');
+                document.head.appendChild(script);
+            });
+        }
+
+        loadScript('https://example.com/some-script.js')
+            .then(result => {
+                console.log(result);
+                return loadScript('https://example.com/another-script.js');
+            })
+            .then(result => console.log(result))
+            .catch(error => console.error(error));
+    </script>
+</body>
+</html>
+
+```
+
+## Can we use a data layer?
+
+Yes you can, your development team can inject custom code on the correct domain to make use of these exposed functions.  Once that is setup the Analytics product can be linked to the events as needed.
+
+
