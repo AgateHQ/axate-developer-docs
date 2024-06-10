@@ -131,36 +131,24 @@ observer.observe(document.head, { childList: true });
 ### Promise-based approach is another technique:
 This ensures scripts are loaded in order by using promises.
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Script Load Example</title>
-</head>
-<body>
-    <script>
-        function loadScript(src) {
-            return new Promise((resolve, reject) => {
-                var script = document.createElement('script');
-                script.src = src;
-                script.onload = () => resolve(src + ' loaded');
-                script.onerror = () => reject(src + ' failed to load');
-                document.head.appendChild(script);
-            });
-        }
+```js
+function loadScript(src) {
+    return new Promise((resolve, reject) => {
+        var script = document.createElement('script');
+        script.src = src;
+        script.onload = () => resolve(src + ' loaded');
+        script.onerror = () => reject(src + ' failed to load');
+        document.head.appendChild(script);
+    });
+}
 
-        loadScript('https://example.com/some-script.js')
-            .then(result => {
-                console.log(result);
-                return loadScript('https://example.com/another-script.js');
-            })
-            .then(result => console.log(result))
-            .catch(error => console.error(error));
-    </script>
-</body>
-</html>
+loadScript('https://example.com/some-script.js')
+    .then(result => {
+        console.log(result);
+        return loadScript('https://example.com/another-script.js');
+    })
+    .then(result => console.log(result))
+    .catch(error => console.error(error));
 ```
 
 ## Can we use a data layer?
