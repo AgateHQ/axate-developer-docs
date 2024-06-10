@@ -82,7 +82,7 @@ function loginBaylissUser() {
 
 ## Considerations and integrations
 
-Some publishers may utilise third-party solutions (such as Adobe Experience Manager) to trigger and track analytics. In scenarios where the suggested code is loaded from a third-party domain, the `wallet` which is responsible for triggering these events, will not function as expected. To ensure this wokrs as expected, the code should be integrated into the same domain where the `wallet` is accessible while on the page.
+Some publishers may utilise third-party solutions (such as Adobe Experience Manager) to trigger and track analytics. In scenarios where the suggested code is loaded from a third-party domain, the `wallet` which is responsible for triggering these events, will not function as expected. To ensure this works as expected, the code should be integrated into the same domain where the `wallet` is accessible while on the page.
 
 ## Why can't we just use `data-` attributes?
 
@@ -92,19 +92,27 @@ Typical we would be able to add `data-axate-login` or something similar to allow
 
 There are events that can be setup to trigger once the entire page is loaded.
 
-```
-
+```js
 // Capture event once the entire page is loaded
   window.onload = function() {
     console.log("Page fully loaded"); sendPageLoadEvent();
+    function agateInit() {
+      console.log("axate started");
+    }
 };
 
 ```
-
 ### MutationObserver is another technique:
 
+```js 
+function agateInit() {
+  console.log("axate started");
+}
 ```
 
+Would be within `https://example.com/some-script.js`
+    
+```js
 var observer = new MutationObserver(function(mutations) {
     mutations.forEach(function(mutation) {
         mutation.addedNodes.forEach(function(node) {
@@ -118,13 +126,12 @@ var observer = new MutationObserver(function(mutations) {
 });
 
 observer.observe(document.head, { childList: true });
-
 ```
 
 ### Promise-based approach is another technique:
 This ensures scripts are loaded in order by using promises.
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -154,7 +161,6 @@ This ensures scripts are loaded in order by using promises.
     </script>
 </body>
 </html>
-
 ```
 
 ## Can we use a data layer?
