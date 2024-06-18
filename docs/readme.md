@@ -95,6 +95,26 @@ add_action('wp_head', 'add_axate');
 
 ```
 
+## Extra Configuration Parameters
+
+```html
+    <div
+      id="axate-wallet"
+      data-selector-premium-content=".premium"
+      data-selector-article-content=".article"
+      data-selector-in-page-notice=".axate-notice"
+      data-selector-disable-hide="true"
+      data-selector-pricing-variant="2"
+      data-selector-tags="sports,athletics,football"
+      data-selector-must-pay="false"
+      data-selector-subscriber-only="false"
+    ></div>
+
+```
+All these can be added to wallet, to enable, or disable axate functionalities per page.
+
+- `disable-hide` is used to disable the Axate hiding functionality, so you can rely only on your own paywalls. The show will still happen via axate, such is appending display: inherit elements to the premium selector, select content.
+
 ### Next Steps
 
 2. [Providing an API for Content Retrieval](./content-api.md)
