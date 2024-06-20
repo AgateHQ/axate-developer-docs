@@ -6,7 +6,7 @@ These functions can be integrated for purposes such as setting user cookies, tra
 
 The current flow includes the following functions:
 
-* `agateInit()`: Triggered when the Axate script is initialized.
+* `axateInit()`: Triggered when the Axate script is initialized.
 * `agateUserLoggedIn()`: Triggered once each time a user is logs in.
 * `agateUserLoggedOut()`: Triggered when a user logs out.
 * `axateUserHasAccessToContent()`: Triggered when a user gains access to content.
@@ -17,6 +17,9 @@ The current flow includes the following functions:
 * `axateBonusReadTransaction`:Triggered when a user used bonus money to pay for transaction.
 * `axateFreePeriodTransaction()`: Triggered when a user has read for free, on weekly/daily period.
 * `axateAlreadyReadTransaction`: Triggered when a user has already read the article.
+
+* `axatePayNow` - In the just read/charge automatically Page Notice, if a user chooses Pay Now and remind me later
+* `axateSetChargeAutomaticallyFromNow` - In the just read/charge automatically Page Notice, if a user chooses Pay Now and don't remind me later
 
   
 #### Axate journey hooks 
