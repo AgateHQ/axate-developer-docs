@@ -11,9 +11,17 @@ The current flow includes the following functions:
 * `agateUserLoggedOut()`: Triggered when a user logs out.
 * `axateUserHasAccessToContent()`: Triggered when a user gains access to content.
 * `agatePremiumContentRendered()`: Triggered when a premium article is purchased.
-* `axateUserOnFreePeriod()`: Triggered when a user is in a free period.
+* `axateUserOnFreePeriod()`: Triggered when a user has reached the free period, only once.
 
-Axate journey hooks - For Axate hooks to work you have to have Axate Wallet available on every page the hook is called.
+* `axatePaidTransaction()`: Triggered when a user used real money to pay for transaction.
+* `axateBonusReadTransaction`:Triggered when a user used bonus money to pay for transaction.
+* `axateFreePeriodTransaction()`: Triggered when a user has read for free, on weekly/daily period.
+* `axateAlreadyReadTransaction`: Triggered when a user has already read the article.
+
+  
+#### Axate journey hooks 
+
+For Axate hooks to work you have to have Axate Wallet available on every page the hook is called.
 
 In order to use use it, you use the JavaScript window object.
 
