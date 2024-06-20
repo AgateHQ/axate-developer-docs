@@ -11,7 +11,7 @@ The current flow includes the following functions:
 * `agateUserLoggedOut()`: Triggered when a user logs out.
 * `axateUserHasAccessToContent()`: Triggered when a user gains access to content.
 * `agatePremiumContentRendered()`: Triggered when a premium article is purchased.
-* `axateUserOnFreePeriod()`: Triggered when a user has reached the free period, only once.
+* `axateUserOnFreePeriod()`: Triggered when a user has reached the free period, only once per achievement of Free Period.
 
 * `axatePaidTransaction()`: Triggered when a user used real money to pay for transaction.
 * `axateBonusReadTransaction`:Triggered when a user used bonus money to pay for transaction.
