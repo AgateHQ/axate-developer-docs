@@ -11,15 +11,17 @@ The current flow includes the following functions:
 * `agateUserLoggedOut()`: Triggered when a user logs out.
 * `axateUserHasAccessToContent()`: Triggered when a user gains access to content.
 * `agatePremiumContentRendered()`: Triggered when a premium article is purchased.
-* `axateUserOnFreePeriod()`: Triggered when a user has reached the free period, only once per achievement of Free Period.
 
+Transaction based Hooks
+* `axateUserOnFreePeriod()`: Triggered when a user has reached the free period, only once per achievement of Free Period.
 * `axatePaidTransaction()`: Triggered when a user used real money to pay for transaction.
 * `axateBonusReadTransaction`:Triggered when a user used bonus money to pay for transaction.
 * `axateFreePeriodTransaction()`: Triggered when a user has read for free, on weekly/daily period.
-* `axateAlreadyReadTransaction`: Triggered when a user has already read the article.
+* `axateAlreadyReadTransaction()`: Triggered when a user has already read the article.
 
-* `axatePayNow` - In the just read/charge automatically Page Notice, if a user chooses Pay Now and remind me later
-* `axateSetChargeAutomaticallyFromNow` - In the just read/charge automatically Page Notice, if a user chooses Pay Now and don't remind me later
+Page Notices based hooks
+* `axatePayNow()` - In the just read/charge automatically Page Notice, if a user chooses Pay Now and remind me later
+* `axateSetChargeAutomaticallyFromNow()` - In the just read/charge automatically Page Notice, if a user chooses Pay Now and don't remind me later
 
   
 #### Axate journey hooks 
