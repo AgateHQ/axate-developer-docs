@@ -19,7 +19,9 @@ If you don’t have a staging site, then select 10 to 15 old / obsolete articles
 Adding the script is easy, there are two parts that ideally will go into the body tag, somewhere above your article: the configuration and the JavaScript bundle.  
 
 ```html
-<script src="https://wallet-staging.axate.io/bundle.js" async></script>
+<link rel="preload" href="https://wallet-staging.axate.io/bundle.js" as="script">
+
+<script src="https://wallet-staging.axate.io/bundle.js"></script>
 
 <div id="axate-wallet" 
 data-selector-premium-content=".premium" 
