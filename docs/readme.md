@@ -1,6 +1,8 @@
 ## Integrating with Axate
 
-To get Axate to work on your site you need to add an Axate script to your web templates. This is what causes the Axate tab to appear on your pages.
+To get Axate to work on your site you need to add an Axate`bundle.js` script to your web templates. This is what causes the Axate tab to appear on your pages.
+
+This will dynamically create the relevant HTML, CSS & JS and inject this into your site - rendering the Axate wallet.
 
 To quickly get a sense, and try a quick demo, refer to this Codepen
 
@@ -27,6 +29,7 @@ data-selector-in-page-notice=".axate-notice"
 
 ```
 
+Notice the `async` attribute this is essential to prevent blocking of the HTML while loading.
 
 The configuration contains the premium class and Axate-notice class attributes.
 
