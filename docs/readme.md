@@ -6,7 +6,7 @@ This will dynamically create the relevant HTML, CSS & JS and inject this into yo
 
 To quickly get a sense, and try a quick demo, refer to this Codepen
 
-* [https://codepen.io/justalex/pen/erZGqm](https://codepen.io/justalex/pen/erZGqm)
+* [Codepen Example](https://codepen.io/Alexander-KA-the-reactor/pen/XWLrPje)
 
 #### Adding the Axate script
 
