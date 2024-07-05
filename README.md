@@ -5,15 +5,11 @@
 
 > Axate is a payment wallet for digital media.
 
-
-
-
 ## Developer Documentation
 
 **Note: these developer docs are a work in progress**
 
 > Please note: these docs are actively in development, and are a work in progress if you spot anything that is unclear, feel free to contact <a href="mailto:dev@axate.com?subject=Integrate with Axate">dev@axate.com</a>
-
 
 ### Axate Wallet
 
@@ -22,36 +18,31 @@
 3. [Using WP-REST API (only for Wordpress)](./docs/wordpress-api.md)
 4. [Incorporating Subscribtions](./docs/subscriptions-api.md)
 5. [Testing & Go Live](./docs/testing-and-go-live.md)
-6. <del>[Troubleshooting (WIP)](./docs/troubleshooting.md)</del>
-
 
 ## General
 
 * [Browser Support](./docs/browser-support.md)
+* [Analytics Hooks](./docs/analytics-hooks.md)
+* [Content API](./docs/content-api.md)
+* [First party cookies](./docs/first-party-cookies.md)
+* [Marketing consents](./docs/marketing-consents.md)
+* [Selective loading](.docs/selective_loading.md)
+* [Troubleshooting](./docs/troubleshooting.md)
+* [Wordpress API](./docs/wordpress-api.md)
 
 ## SEO Considerations
 
 Axate’s paywall can potentially appear in Google News results for paid content. There are tactics you can employ to ensure it isn’t shown, and to ensure your pages appear correctly on search results. We’ve put together some information on these tactics and how Google and Google News treat paywalled content. We recommend that you read the below and check that these settings are applied across Google and Google News. Please let us know if you need any help with this. 
 
-
 * [Troubleshooting Google Search Results for Paywalled/Axate Paid Articles](https://developers.google.com/search/docs/advanced/structured-data/paywalled-content)
-
 
 ### Axate AMP
 
 As of November 2023 we decided to phase out AMP, if you still run an AMP website we can provide custom solutions for you.
 
-* [Axate AMP Overview](./docs/amp/readme.md)
-* [Integrating Axate AMP](./docs/amp/amp-integration.md)
-* [Marketing Consents](./docs/marketing-consents.md)
-* <del>[Axate AMP and WordPress (TBA)](./docs/amp/amp-and-wordpress.md)</del>
-* <del>[Troubleshooting AMP <sup>α</sup>](./docs/amp/troubleshooting-amp.md)</del>
-
-
 ## Research &amp; Development
 
 * <del>[Facebook Instant Articles (TBA)](./docs/research/facebook-instant-articles.md)</del>
-
 
 ## Roadmap
 
