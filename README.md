@@ -36,15 +36,6 @@ Axate’s paywall can potentially appear in Google News results for paid content
 
 * [Troubleshooting Google Search Results for Paywalled/Axate Paid Articles](https://developers.google.com/search/docs/advanced/structured-data/paywalled-content)
 
-### Axate AMP
-
-As of November 2023 we decided to phase out AMP, if you still run an AMP website we can provide custom solutions for you.
-
-## Research &amp; Development
-
-* <del>[Facebook Instant Articles (TBA)](./docs/research/facebook-instant-articles.md)</del>
-
 ## Roadmap
 
-> Axate will be partnering with CMS and technology providers in the near future.<br />
 > For more information about being a technology partner, or any other technical queries, please contact <a href="mailto:dev@axate.com?subject=Integrate with Axate">dev@axate.com</a>
