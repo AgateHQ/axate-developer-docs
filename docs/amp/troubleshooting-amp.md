@@ -38,7 +38,7 @@ Our reference implementation/demo is what we test against internally, and ship a
 
 ### [Axate AMP Live Demo](https://axate-amp.s3.eu-west-2.amazonaws.com/index.html)
 
-Sourcecode [is also available](https://github.com/AgateHQ/axate-amp-sample-code/).
+Sourcecode [is also available](https://github.com/AxateHQ/axate-amp-sample-code/).
 
 &nbsp;
 

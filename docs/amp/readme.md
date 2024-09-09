@@ -11,7 +11,7 @@ Visit our demo Axate AMP publication and view source as a reference working impl
 
 ### [Axate AMP Live Demo](https://axate-amp.s3.eu-west-2.amazonaws.com/index.html)
 
-This demos sourcecode [is also available](https://github.com/AgateHQ/axate-amp-sample-code/).
+This demos sourcecode [is also available](https://github.com/AxateHQ/axate-amp-sample-code/).
 
 &nbsp;
 

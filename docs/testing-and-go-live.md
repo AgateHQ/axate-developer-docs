@@ -20,13 +20,13 @@ To include Axate on selected articles
 
 The staging code is this:
 
-``` <script async src="https://wallet-staging.agate.io/bundle.js"></script> ```
+``` <script async src="https://wallet-staging.axate.io/bundle.js"></script> ```
 
 To make it like, delete word “staging” so that it appears like this:
 
-``` <script async src="https://wallet.agate.io/bundle.js"></script> ```
+``` <script async src="https://wallet.axate.io/bundle.js"></script> ```
 
-You should see Agate briefly if the page is still loading.
+You should see Axate briefly if the page is still loading.
 
 On our side, we need to switch page notices etc over to our live database, so please let us know when you are ready to carry out the live testing.
 

@@ -17,29 +17,29 @@ Setting up the Frontend repos to be correctly mapped to publisher domains
 
 1. Login to `AWS`, locate `AWS` Management Console.
 
-  <img width="961" alt="" src="https://github.com/AgateHQ/axate-developer-docs/assets/71266765/dd028542-a196-4c86-a1e5-3c576e7b60e8">
+  <img width="961" alt="" src="https://github.com/AxateHQ/axate-developer-docs/assets/71266765/dd028542-a196-4c86-a1e5-3c576e7b60e8">
 
 3. Expand All Services, look for "Certificate Manager"
 4. On Certificate Manager opened, look for "Request Certificate".
 
-<img width="909" alt="" src="https://github.com/AgateHQ/axate-developer-docs/assets/71266765/358f1e55-3c2c-4ac3-bd7c-84bbadfc20c3">
+<img width="909" alt="" src="https://github.com/AxateHQ/axate-developer-docs/assets/71266765/358f1e55-3c2c-4ac3-bd7c-84bbadfc20c3">
   
 6. Certificate type - "Request a public certificate"
 
-<img width="674" alt="" src="https://github.com/AgateHQ/axate-developer-docs/assets/71266765/b4e9bec4-7e75-491b-a8bf-0824654b23f1">
+<img width="674" alt="" src="https://github.com/AxateHQ/axate-developer-docs/assets/71266765/b4e9bec4-7e75-491b-a8bf-0824654b23f1">
 
 8. Enter Domain Name "`*.publisher.com`"
 
-   <img width="674" alt="" src="https://github.com/AgateHQ/axate-developer-docs/assets/71266765/5217168c-4783-40dd-b269-6f5ad55e0bb1">
+   <img width="674" alt="" src="https://github.com/AxateHQ/axate-developer-docs/assets/71266765/5217168c-4783-40dd-b269-6f5ad55e0bb1">
 
 10. Select validation method: "`DNS` validation - recommended"
 
    
-   <img width="674" alt="" src="https://github.com/AgateHQ/axate-developer-docs/assets/71266765/58fcc2c8-03bb-4968-8eaa-9061278bf8b6">
+   <img width="674" alt="" src="https://github.com/AxateHQ/axate-developer-docs/assets/71266765/58fcc2c8-03bb-4968-8eaa-9061278bf8b6">
 
 12. Click orange button "Request"
 
-   <img width="676" alt="" src="https://github.com/AgateHQ/axate-developer-docs/assets/71266765/194d98a1-f637-4d3b-b9d1-62d1f407c679">
+   <img width="676" alt="" src="https://github.com/AxateHQ/axate-developer-docs/assets/71266765/194d98a1-f637-4d3b-b9d1-62d1f407c679">
 
 14. Send the `DNS CNAME` settings to validate with the publisher.
  
@@ -54,7 +54,7 @@ Setting up the backend to be correctly mapped to publisher domains
 
 9. Login to Heroku
 10. Select Organization instead of Personal
-11. Select "`agate-io`"
+11. Select "`axate-io`"
 12. Add Domain
 13. `axate-api.publisher.com`
 14. Example: `axate-api.rotherhamadvertiser.co.uk`
@@ -162,7 +162,7 @@ Setup relevant repos to re-direct or reference the correct domains
   - `account`
  
 - Back-end: Update `registration/login` controller, to account for new domains, update mailer links
-- Example: `https://github.com/AgateHQ/agate/commit/236f22ddf8da728b17d53ed793c4bc80bf4081e3`
+- Example: `https://github.com/AxateHQ/axate/commit/236f22ddf8da728b17d53ed793c4bc80bf4081e3`
 
 - Login link on admin dashboard/ change password link 
 - Email links 
