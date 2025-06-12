@@ -7,10 +7,10 @@ These functions can be integrated for purposes such as setting user cookies, tra
 The current flow includes the following functions:
 
 * `axateInit()`: Triggered when the Axate script is initialized.
-* `agateUserLoggedIn()`: Triggered once each time a user is logs in.
-* `agateUserLoggedOut()`: Triggered when a user logs out.
+* `axateUserLoggedIn()`: Triggered once each time a user logs in.
+* `axateUserLoggedOut()`: Triggered when a user logs out.
 * `axateUserHasAccessToContent()`: Triggered when a user gains access to content.
-* `agatePremiumContentRendered()`: Triggered when a premium article is purchased.
+* `axatePremiumContentRendered()`: Triggered when a premium article is purchased.
 
 Transaction based Hooks
 * `axateUserOnFreePeriod()`: Triggered when a user has reached the free period, only once per achievement of Free Period.
@@ -44,7 +44,7 @@ will direct you on the Axate journey to make a payment with all the required par
 Example: 
 
 ```js
-function agatePremiumContentRendered() {
+function axatePremiumContentRendered() {
 
   document.getElementById('subscription-barrier').style.display = "none";
 
@@ -58,7 +58,7 @@ Example:
 
 let userHasAxateAccount = false;
 
-function agateUserLoggedIn() {
+function axateUserLoggedIn() {
 
   userHasAxateAccount = true;
 
@@ -109,7 +109,7 @@ There are events that can be setup to trigger once the entire page is loaded.
 // Capture event once the entire page is loaded
   window.onload = function() {
     console.log("Page fully loaded"); sendPageLoadEvent();
-    function agateInit() {
+    function axateInit() {
       console.log("axate started");
     }
 };
@@ -118,7 +118,7 @@ There are events that can be setup to trigger once the entire page is loaded.
 ### MutationObserver is another technique:
 
 ```js 
-function agateInit() {
+function axateInit() {
   console.log("axate started");
 }
 ```

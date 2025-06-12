@@ -54,7 +54,7 @@ Setting up the backend to be correctly mapped to publisher domains
 
 9. Login to Heroku
 10. Select Organization instead of Personal
-11. Select "`agate-io`"
+11. Select "`axate-io`"
 12. Add Domain
 13. `axate-api.publisher.com`
 14. Example: `axate-api.rotherhamadvertiser.co.uk`
