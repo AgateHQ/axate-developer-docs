@@ -9,7 +9,7 @@ Although PayPal and Apple Pay will be available to your users when your implemen
 
 ### On Live, prior to Go Live
 
-  1. Mark 10 - 15 articles on your staging site as premium Add the live Axate code only to those articles
+  1. Mark 10 - 15 articles on your staging site as premium. Add the live Axate code only to those articles
   2. Provide us with the URLs of those articles
 
 We recommend testing on the live environment prior to full go-live. To do this, mark as premium a few articles that are unlikely to be found organically (i.e. older articles or not currently topical). We recommend a sample of 10 to 15 articles for testing.
@@ -22,11 +22,11 @@ The staging code is this:
 
 ``` <script async src="https://wallet-staging.agate.io/bundle.js"></script> ```
 
-To make it like, delete word “staging” so that it appears like this:
+To make it live, delete the word “staging” so that it appears like this:
 
 ``` <script async src="https://wallet.agate.io/bundle.js"></script> ```
 
-You should see Agate briefly if the page is still loading.
+You should see Axate briefly if the page is still loading.
 
 On our side, we need to switch page notices etc over to our live database, so please let us know when you are ready to carry out the live testing.
 

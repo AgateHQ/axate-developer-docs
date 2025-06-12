@@ -31,4 +31,4 @@ In both these steps, we will work with you to make Axate work with your system a
 
 ### Next Steps
 
-4. [Incorporating Subscribtions](./subscriptions-api.md)
+4. [Incorporating Subscriptions](./subscriptions-api.md)

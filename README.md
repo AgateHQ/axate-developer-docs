@@ -15,8 +15,8 @@
 
 1. [Integrating with Axate](./docs/readme.md)
 2. [Providing an API for Content Retrieval](./docs/content-api.md)
-3. [Using WP-REST API (only for Wordpress)](./docs/wordpress-api.md)
-4. [Incorporating Subscribtions](./docs/subscriptions-api.md)
+3. [Using WP-REST API (only for WordPress)](./docs/wordpress-api.md)
+4. [Incorporating Subscriptions](./docs/subscriptions-api.md)
 5. [Testing & Go Live](./docs/testing-and-go-live.md)
 
 ## General
@@ -28,7 +28,7 @@
 * [Marketing consents](./docs/marketing-consents.md)
 * [Selective loading](.docs/selective_loading.md)
 * [Troubleshooting](./docs/troubleshooting.md)
-* [Wordpress API](./docs/wordpress-api.md)
+* [WordPress API](./docs/wordpress-api.md)
 
 ## SEO Considerations
 

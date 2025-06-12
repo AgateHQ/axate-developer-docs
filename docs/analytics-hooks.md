@@ -1,4 +1,4 @@
-# Javascripts Hooks
+# JavaScript Hooks
 
 Axate offers various functions to manage user interactions with the Axate wallet, both before and after login, and when premium content is accessed.
 
@@ -7,19 +7,19 @@ These functions can be integrated for purposes such as setting user cookies, tra
 The current flow includes the following functions:
 
 * `axateInit()`: Triggered when the Axate script is initialized.
-* `agateUserLoggedIn()`: Triggered once each time a user is logs in.
+* `agateUserLoggedIn()`: Triggered once each time a user logs in.
 * `agateUserLoggedOut()`: Triggered when a user logs out.
 * `axateUserHasAccessToContent()`: Triggered when a user gains access to content.
 * `agatePremiumContentRendered()`: Triggered when a premium article is purchased.
 
-Transaction based Hooks
+Transaction-based Hooks
 * `axateUserOnFreePeriod()`: Triggered when a user has reached the free period, only once per achievement of Free Period.
 * `axatePaidTransaction()`: Triggered when a user used real money to pay for transaction.
-* `axateBonusReadTransaction`:Triggered when a user used bonus money to pay for transaction.
-* `axateFreePeriodTransaction()`: Triggered when a user has read for free, on weekly/daily period.
+* `axateBonusReadTransaction`: Triggered when a user used bonus money to pay for transaction.
+* `axateFreePeriodTransaction()`: Triggered when a user has read for free during a weekly/daily period.
 * `axateAlreadyReadTransaction()`: Triggered when a user has already read the article.
 
-Page Notices based hooks
+Page Notice-based hooks
 * `axatePayNow()` - In the just read/charge automatically Page Notice, if a user chooses Pay Now and remind me later
 * `axateSetChargeAutomaticallyFromNow()` - In the just read/charge automatically Page Notice, if a user chooses Pay Now and don't remind me later
 
@@ -28,7 +28,7 @@ Page Notices based hooks
 
 For Axate hooks to work you have to have Axate Wallet available on every page the hook is called.
 
-In order to use use it, you use the JavaScript window object.
+In order to use it, you use the JavaScript window object.
 
 Example: window.axateContribute()
 
@@ -50,7 +50,7 @@ function agatePremiumContentRendered() {
 
 };
 ```
-In this example, a subscription offer is ommited after an Axate User has purchased an article via Axate.
+In this example, a subscription offer is omitted after an Axate user has purchased an article via Axate.
 
 Example: 
 
@@ -99,7 +99,7 @@ Some publishers may utilise third-party solutions (such as Adobe Experience Mana
 
 ## Why can't we just use `data-` attributes?
 
-Typical we would be able to add `data-axate-login` or something similar to allow analytics to hook onto `DOM` elements with ease, however in this context the `wallet` is within an iframe, so due to security (accessing Elements in a Cross-Origin Iframe) this is not setup.
+Typically we would be able to add `data-axate-login` or something similar to allow analytics to hook onto `DOM` elements with ease; however, in this context the `wallet` is within an iframe, so due to security (accessing elements in a cross-origin iframe) this is not set up.
 
 ## We’ve got a race condition, we’re waiting for Axate to load, what can we do?
 
