@@ -1,6 +1,6 @@
-## Wordpress API Integration
+## WordPress API Integration
 
-Current Wordpress versions come with a REST API enabled by default, and can be consumed easily by any developer application, such as Axate.
+Current WordPress versions come with a REST API enabled by default, and can be consumed easily by any developer application, such as Axate.
 
 Let’s take for example this article,
  - https://en-gb.wordpress.org/2019/01/15/glasgow-meetup-1st-quarter-2019/
@@ -22,7 +22,7 @@ Since you would not want a tech-savvy user to have access to this API publicly, 
 
 
 One middle step is to ensure, the content is not present on the Template that is responsible for printing it out to normal users. 
-That means within the single.php we will remove the wp-content tag that 
+That means within `single.php` you should remove the `the_content()` call that normally outputs the article body. 
 
 
 There can be further steps to secure API access, so that it can be private only to Agate servers and therefore guarantee that only a request from us would be treated as a condition to reveal content, but these require custom development, feel free to get in touch with us and we can always work on a solution together.
