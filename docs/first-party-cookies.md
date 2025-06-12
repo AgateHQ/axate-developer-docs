@@ -60,7 +60,7 @@ Setting up the backend to be correctly mapped to publisher domains
 14. Example: `axate-api.rotherhamadvertiser.co.uk`
 15. Then `DNS` target value to provide to the publisher to create a subdomain to `axate-api.publisher.com`
 
-## Step #4 
+## Step #3
 
 ### Create cloudfront pointing our accounts page
 
@@ -76,7 +76,7 @@ Setting up the backend to be correctly mapped to publisher domains
 
 18. Create a distribution
 19. Origin Section
-20. Enter the origin domain (this coressponds to the live example) or follow the table:
+20. Enter the origin domain (this corresponds to the live example) or follow the table:
 
 ### Domains
 
@@ -106,7 +106,7 @@ IMPORTANT: (Default root object - optional) set this to "`index.html`" do not ad
 ![image](https://user-images.githubusercontent.com/22083512/194289938-f7cc42bf-d28c-45fb-b48c-c0502f3341c1.png)
 
 24. Click orange button to "Create Distribution".
-25. On sucessfully created a distribution link up it on the publisher's DNS.
+25. On successfully creating a distribution, link it on the publisher's DNS.
 
 `accounts.publisher.com`	`CNAME`	1 hour	`1234567x.cloudfront.net`.
 
@@ -135,7 +135,7 @@ Thank you
 
 ```
 
-## Step #5 
+## Step #4
 
 ## Why?
 Setting up payment providers to work with new publisher domains 
@@ -150,7 +150,9 @@ Update the new domains to have:
 
 - `accounts.publisher.com`
 
-## Developer Code-Only Updates for every new Domain
+## Step #5
+
+### Developer Code-Only Updates for every new Domain
 
 ## Why?
 Setup relevant repos to re-direct or reference the correct domains
