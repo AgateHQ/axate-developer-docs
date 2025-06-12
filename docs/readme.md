@@ -71,7 +71,7 @@ data-selector-banner-contribution=".AxateContributionBanner">
 <div class="AxateContributionBanner"></div>
 ```
 
-## Wordpress
+## WordPress
 
 Editing the functions.php file
 
@@ -123,5 +123,5 @@ All these can be added to wallet, to enable, or disable axate functionalities pe
 ### Next Steps
 
 2. [Providing an API for Content Retrieval](./content-api.md)
-3. [Using WP-REST API (only for Wordpress)](./wordpress-api.md)
+3. [Using WP-REST API (only for WordPress)](./wordpress-api.md)
 4. [Incorporating Subscribtions](./subscriptions-api.md)
