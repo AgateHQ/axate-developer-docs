@@ -37,7 +37,7 @@ The configuration contains the premium class and Axate-notice class attributes.
 
 * The script specifies that anything on the page that is attributed with the class “premium” will treated by Axate as a premium, paid-for article, i.e. it specifies the part of the page which contains the premium content.
 
-* The element on the page that is attributed with the class “agate-notice” will be used to display a page notices to users embedded within your page by Axate. This is used for registration purposes, to display a “call to action” inviting the user to register for Axate. There are also other circumstances in which Axate needs to display a page notice. Wherever you put this element determines where the page notice will appear, and the lead-in will appear above it.
+* The element on the page that is attributed with the class “axate-notice” will be used to display page notices to users embedded within your page by Axate. This is used for registration purposes, to display a “call to action” inviting the user to register for Axate. There are also other circumstances in which Axate needs to display a page notice. Wherever you put this element determines where the page notice will appear, and the lead-in will appear above it.
 
 That’s the most technical bit done! The next step is to mark articles as premium...
 
@@ -122,6 +122,6 @@ All these can be added to wallet, to enable, or disable axate functionalities pe
 
 ### Next Steps
 
-2. [Providing an API for Content Retrieval](./content-api.md)
-3. [Using WP-REST API (only for Wordpress)](./wordpress-api.md)
-4. [Incorporating Subscribtions](./subscriptions-api.md)
+1. [Providing an API for Content Retrieval](./content-api.md)
+2. [Using WP-REST API (only for Wordpress)](./wordpress-api.md)
+3. [Incorporating Subscribtions](./subscriptions-api.md)
