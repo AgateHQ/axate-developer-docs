@@ -1,4 +1,4 @@
-<img src="https://images.squarespace-cdn.com/content/v1/602e7fb8e0109735215bf464/a6495b11-eecf-4e66-bd14-ba39977d3f25/Untitled+%282000+x+462+px%29+%282300+x+462+px%29+%281%29.png?format=1500w" alt="drawing" alt="Axate" width="100" />
+<img src="https://images.squarespace-cdn.com/content/v1/602e7fb8e0109735215bf464/a6495b11-eecf-4e66-bd14-ba39977d3f25/Untitled+%282000+x+462+px%29+%282300+x+462+px%29+%281%29.png?format=1500w" alt="Axate" width="100" />
 
 
 ### Every publisher needs better ways to make money.
@@ -15,8 +15,8 @@
 
 1. [Integrating with Axate](./docs/readme.md)
 2. [Providing an API for Content Retrieval](./docs/content-api.md)
-3. [Using WP-REST API (only for Wordpress)](./docs/wordpress-api.md)
-4. [Incorporating Subscribtions](./docs/subscriptions-api.md)
+3. [Using WP-REST API (only for WordPress)](./docs/wordpress-api.md)
+4. [Incorporating Subscriptions](./docs/subscriptions-api.md)
 5. [Testing & Go Live](./docs/testing-and-go-live.md)
 
 ## General
@@ -26,9 +26,9 @@
 * [Content API](./docs/content-api.md)
 * [First party cookies](./docs/first-party-cookies.md)
 * [Marketing consents](./docs/marketing-consents.md)
-* [Selective loading](.docs/selective_loading.md)
+* [Selective loading](./docs/selective_loading.md)
 * [Troubleshooting](./docs/troubleshooting.md)
-* [Wordpress API](./docs/wordpress-api.md)
+* [WordPress API](./docs/wordpress-api.md)
 
 ## SEO Considerations
 
