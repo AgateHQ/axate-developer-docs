@@ -5,9 +5,13 @@ export default defineConfig({
   description: 'Integration guides and API documentation for the Axate payment wallet.',
   base: '/axate-developer-docs/',
   cleanUrls: true,
+  appearance: false,
   srcExclude: ['README.md'],
   head: [
-    ['meta', { name: 'theme-color', content: '#087f5b' }],
+    ['meta', { name: 'theme-color', content: '#1bb580' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
+    ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap' }],
     ['link', { rel: 'icon', href: '/axate-developer-docs/images/logo-axate-dark-transparent.svg' }]
   ],
   themeConfig: {
