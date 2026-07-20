@@ -1,4 +1,4 @@
-<img src="https://images.squarespace-cdn.com/content/v1/602e7fb8e0109735215bf464/a6495b11-eecf-4e66-bd14-ba39977d3f25/Untitled+%282000+x+462+px%29+%282300+x+462+px%29+%281%29.png?format=1500w" alt="drawing" alt="Axate" width="100" />
+<img src="./public/images/logo-axate-dark-transparent.svg" alt="Axate" width="100" />
 
 
 ### Every publisher needs better ways to make money.
@@ -6,6 +6,19 @@
 > Axate is a payment wallet for digital media.
 
 ## Developer Documentation
+
+This repository is a [VitePress](https://vitepress.dev/) site, published with GitHub Pages.
+
+### Local development
+
+Requires Node.js 20 or later.
+
+```sh
+npm install
+npm run docs:dev
+```
+
+Create a production build with `npm run docs:build`, then inspect it locally with `npm run docs:preview`.
 
 **Note: these developer docs are a work in progress**
 
@@ -26,7 +39,7 @@
 * [Content API](./docs/content-api.md)
 * [First party cookies](./docs/first-party-cookies.md)
 * [Marketing consents](./docs/marketing-consents.md)
-* [Selective loading](.docs/selective_loading.md)
+* [Selective loading](./docs/selective_loading.md)
 * [Troubleshooting](./docs/troubleshooting.md)
 * [WordPress API](./docs/wordpress-api.md)
 

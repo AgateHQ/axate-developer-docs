@@ -1,4 +1,4 @@
-## Integrating with Axate
+# Integrating with Axate
 
 To get Axate to work on your site you need to add an Axate`bundle.js` script to your web templates. This is what causes the green Axate wallet-tab to appear on your pages.
 

@@ -56,7 +56,7 @@ For more, see [Facebook Instant Articles](https://instantarticles.fb.com/).
 ### Integrating Axate
 ---
 
-> Note: we are currently in the process of building out this functionality as a simplified version of our current Axate Wallet. Contact [publishers@axate.com](publishers@axate.com) to request more information (or for a future 'sneak peak').
+> Note: we are currently in the process of building out this functionality as a simplified version of our current Axate Wallet. Contact [publishers@axate.com](mailto:publishers@axate.com) to request more information (or for a future 'sneak peak').
 
 
 

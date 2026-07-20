@@ -1,4 +1,4 @@
-## Axate AMP Overview
+# Axate AMP Overview
 
 > Please note: these docs are actively in development, and are a work in progress.
  
