@@ -1,34 +1,57 @@
-### Setup or provide API access to retrieve content
+## Provide API Access for Premium Content
 
+> If you are on WordPress, go directly to [Using WP-REST API](./wordpress-api.md).
 
-> If you’re on WordPress, WP-REST JSON Api would be that API, you can go directly to [Using WP-REST API](./wordpress-api.md)
+### Why this step exists
 
+Without API retrieval, users can sometimes bypass client-side hiding. API retrieval is the secure integration path because Axate fetches premium content from your backend after a valid purchase flow.
 
-This step is to prevent tech-savvy users from being able to circumvent Axate. 
+### Do this
 
-We do this by accessing your content behind the scenes by you providing us with an API. 
+1. Expose a JSON endpoint that returns full premium content for a single article.
+2. Ensure the endpoint can be queried by article ID or slug.
+3. Protect the endpoint with authentication (for example basic auth, token auth, or allowlist controls).
+4. Share endpoint format and auth requirements with the Axate team.
 
-This part is a little more technical, please just contact us if you need help.
+Example endpoint patterns:
 
-This API allows us to request the premium content of the article, which is requested by the client-side JavaScript and served, via Axate servers only. 
+- `https://yourpublication.com/api/v1/posts?id=12`
+- `https://yourpublication.com/api/v1/posts?slug=story-slug`
 
-If you already have an API ready to serve articles via JSON feel free to provide the details.
+Example response shape:
 
-The “premium” tag therefore specifies the content that is served by the API. 
+```json
+{
+	"id": 12,
+	"slug": "story-slug",
+	"title": "Story Title",
+	"content": "<p>Full premium HTML content</p>",
+	"updated_at": "2026-07-23T09:30:00Z"
+}
+```
 
-An example of this would be requesting an article through its id: https://yourpublication.com/api/v1/posts?id=12
+### Verify
 
-#### Light Integration
+- An authenticated request to the endpoint returns premium article body content.
+- An unauthenticated request is rejected.
+- Returned `content` matches the article body expected on page.
+- Response time is acceptable for production use.
 
-If you are unable to provide an API, you can implement a “light” version of Axate, using this codepen's simple CSS trick, to hide the premium content.
+### Common failure and fix
 
-* https://codepen.io/justalex/pen/erZGqm
+- Endpoint returns excerpt only: update API serializer to include full body HTML.
+- Endpoint is publicly accessible: enforce authentication before go-live.
+- Slug lookups fail: confirm slug normalization and routing behavior in your CMS.
+- HTML is sanitized too aggressively: allow required article tags while keeping security controls.
 
-However, although this is simpler, we don’t recommend it because it can potentially be circumvented by savvy users – and for most publishers the API method above is easy.
+## Light Integration (Fallback)
 
-In both these steps, we will work with you to make Axate work with your system and API without any issues
+If you cannot expose an API yet, you can run a light integration that hides premium content client-side.
 
+- Demo approach: https://codepen.io/justalex/pen/erZGqm
 
-### Next Steps
+This is faster to deploy but less secure than API retrieval. Use it only as a temporary path.
 
-1. [Incorporating Subscribtions](./subscriptions-api.md)
+## Next Step
+
+1. [Incorporating Subscriptions](./subscriptions-api.md)

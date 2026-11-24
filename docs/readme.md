@@ -1,127 +1,112 @@
 # Integrating with Axate
 
-To get Axate to work on your site you need to add an Axate`bundle.js` script to your web templates. This is what causes the green Axate wallet-tab to appear on your pages.
+This page is the fastest path to a working Axate integration.
 
-This will dynamically create the relevant HTML, CSS & JS and inject this into your site - rendering the Axate wallet.
+## Quickstart (15 Minutes)
 
-To quickly get a sense, and try a quick demo, refer to this Codepen
+### Why this step exists
 
-* [Codepen Example](https://codepen.io/Alexander-KA-the-reactor/pen/XWLrPje)
+Axate needs one script and one configuration element to render the wallet and control premium content behavior.
 
-#### Adding the Axate script
+### Prerequisites
 
-With most publishers we start off by testing Axate on a staging version of their site (one they keep for internal development and testing and which isn’t available to the public). This allows us to test the integration with dummy accounts and data before we move to the live environment.  
+- A staging site (preferred) or a small test set of low-traffic live articles (10 to 15)
+- Access to your page template or CMS article template
+- A CSS selector for premium content (example: `.premium`)
+- A CSS selector for in-page notice placement (example: `.axate-notice`)
 
-This should be identical to your live site in terms of architecture and code
+### Do this
 
-If you don’t have a staging site, then select 10 to 15 old / obsolete articles on your live site that are unlikely to be the subject of Google searches.
-
-Adding the script is easy, there are two parts that ideally will go into the body tag, somewhere above your article: the configuration and the JavaScript bundle.  
+1. Add this snippet to your article template, near article content:
 
 ```html
 <link rel="preload" href="https://wallet-staging.axate.io/bundle.js" as="script">
+<script async src="https://wallet-staging.axate.io/bundle.js"></script>
 
-<script src="https://wallet-staging.axate.io/bundle.js"></script>
-
-<div id="axate-wallet" 
-data-selector-premium-content=".premium" 
-data-selector-in-page-notice=".axate-notice" 
-</div>
-
-
+<div
+  id="axate-wallet"
+  data-selector-premium-content=".premium"
+  data-selector-in-page-notice=".axate-notice"
+></div>
 ```
 
-Notice the `async` attribute this is essential to prevent blocking of the HTML while loading.
-
-The configuration contains the premium class and Axate-notice class attributes.
-
-* The script specifies that anything on the page that is attributed with the class “premium” will treated by Axate as a premium, paid-for article, i.e. it specifies the part of the page which contains the premium content.
-
-* The element on the page that is attributed with the class “axate-notice” will be used to display page notices to users embedded within your page by Axate. This is used for registration purposes, to display a “call to action” inviting the user to register for Axate. There are also other circumstances in which Axate needs to display a page notice. Wherever you put this element determines where the page notice will appear, and the lead-in will appear above it.
-
-That’s the most technical bit done! The next step is to mark articles as premium...
-
-#### Tagging articles
-
-The way Axate works, publishers have complete control over which articles are charged for, and which are not. That means you need to tag them in your CMS so our system knows when to charge. Luckily this is very simple.
-
-For every article that you wish to be treated as a premium, paid-for article, just include a tag that you have defined above as premium. Any articles without this tag will not be charged for.
-
-For example:  
+2. Mark premium article content with your premium selector:
 
 ```html
-<div class="story-non-premium">
-  <h1> Title of the Story </h1>
-</div>
-<div class="premium"> 
-   This is where the main content of the story resides,
-   and will only be revealed to those who paid for it 
+<div class="premium">
+  Premium article content goes here.
 </div>
 <div class="axate-notice"></div>
 ```
 
-By way of illustration:
+3. Leave non-premium articles without the premium selector.
 
-![Image of Axate Page Notice](../.assets/images/axate-page-notice.png)
+### Verify
 
+- The Axate wallet tab appears on page load.
+- Premium content is recognized only where the premium selector exists.
+- The in-page notice renders where `.axate-notice` is placed.
+- The page remains non-blocking while loading (script uses `async`).
 
+### Common failure and fix
+
+- Wallet tab does not appear: verify script URL and that the script is present on the rendered page.
+- Premium article is not detected: confirm the selector in `data-selector-premium-content` matches the article markup exactly.
+- Notice appears in wrong place: move `.axate-notice` element to the desired location in the template.
+
+## Choose Your Path
+
+- Standard sites: continue to [Providing an API for Content Retrieval](./content-api.md)
+- WordPress sites: continue to [Using WP-REST API](./wordpress-api.md)
+- AMP sites: continue to [AMP Integration](./amp/amp-integration.md)
+
+## Optional Configuration
+
+Add these attributes to `#axate-wallet` when needed:
+
+```html
+<div
+  id="axate-wallet"
+  data-selector-premium-content=".premium"
+  data-selector-article-content=".article"
+  data-selector-in-page-notice=".axate-notice"
+  data-selector-disable-hide="true"
+  data-selector-pricing-variant="2"
+  data-selector-tags="sports,athletics,football"
+  data-selector-must-pay="false"
+  data-selector-subscriber-only="false"
+></div>
 ```
-# Axate Contribution Banner - Add this anywhere in the post. 
-data-selector-banner-contribution=".AxateContributionBanner">
-<div class="AxateContributionBanner"></div>
-```
 
-## WordPress
+- `data-selector-disable-hide="true"`: keeps Axate from hiding premium content automatically, useful if your own paywall already handles hiding.
 
-Editing the functions.php file
+## WordPress Example
+
+If your content model uses tags, this example wraps premium-tagged posts and injects the wallet:
 
 ```php
-
 function add_content_after($content) {
- if ( has_tag('premium') ) { 
-	 $before_content = '<div class="premium">';
-      $after_content = '</div><div class="axate-notice"></div>';
-      $fullcontent = $before_content . $content . $after_content;
- } else {
-	 $fullcontent = $content;
- }
-       return $fullcontent;
+  if (has_tag('premium')) {
+    $before_content = '<div class="premium">';
+    $after_content = '</div><div class="axate-notice"></div>';
+    return $before_content . $content . $after_content;
+  }
 
+  return $content;
 }
 add_filter('the_content', 'add_content_after');
 
-
 function add_axate() {
-    ?>
- <script async src="https://wallet.axate.io/bundle.js"></script><div id="axate-wallet" data-selector-premium-content=".premium" data-selector-article-content=".article" data-selector-in-page-notice=".axate-notice"></div>
-    <?php
+  ?>
+  <script async src="https://wallet.axate.io/bundle.js"></script>
+  <div id="axate-wallet" data-selector-premium-content=".premium" data-selector-article-content=".article" data-selector-in-page-notice=".axate-notice"></div>
+  <?php
 }
 add_action('wp_head', 'add_axate');
-
 ```
 
-## Extra Configuration Parameters
-
-```html
-    <div
-      id="axate-wallet"
-      data-selector-premium-content=".premium"
-      data-selector-article-content=".article"
-      data-selector-in-page-notice=".axate-notice"
-      data-selector-disable-hide="true"
-      data-selector-pricing-variant="2"
-      data-selector-tags="sports,athletics,football"
-      data-selector-must-pay="false"
-      data-selector-subscriber-only="false"
-    ></div>
-
-```
-All these can be added to wallet, to enable, or disable axate functionalities per page.
-
-- `disable-hide` is used to disable the Axate hiding functionality, so you can rely only on your own paywalls. The show will still happen via axate, such is appending display: inherit elements to the premium selector, select content.
-
-### Next Steps
+## Next Step
 
 1. [Providing an API for Content Retrieval](./content-api.md)
-2. [Using WP-REST API (only for WordPress)](./wordpress-api.md)
-3. [Incorporating Subscribtions](./subscriptions-api.md)
+2. [Using WP-REST API (WordPress)](./wordpress-api.md)
+3. [Incorporating Subscriptions](./subscriptions-api.md)

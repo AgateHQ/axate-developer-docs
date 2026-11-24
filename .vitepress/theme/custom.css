@@ -16,7 +16,7 @@
   --vp-c-text-1: var(--axate-ink);
   --vp-c-text-2: var(--axate-muted);
   --vp-c-text-3: #687181;
-  --vp-c-bg: #ffffff;
+  --vp-c-bg: var(--axate-color-surface);
   --vp-c-bg-alt: #fafafa;
   --vp-c-bg-soft: var(--axate-grey);
   --vp-c-divider: #e7e7e7;
@@ -91,7 +91,7 @@ body {
 }
 
 .VPFeature:hover {
-  border-color: var(--axate-green);
+  border-color: var(--axate-color-brand-accent);
   transform: translateY(-2px);
 }
 
@@ -127,7 +127,7 @@ body {
 }
 
 .custom-block.tip {
-  border-color: var(--axate-green);
+  border-color: var(--axate-color-brand-accent);
   background: var(--axate-green-soft);
 }
 

@@ -1,46 +1,79 @@
-## Testing & Go Live
+## Testing and Go Live
 
+### Why this step exists
 
-### Testing on Staging
+A staged rollout reduces risk and confirms premium flows before full site deployment.
 
-We can provide you with dummy credit card credentials so that you can set up user accounts on your staging environment without spending any actual real money. 
+## Stage 1: Test on Staging
 
-Although PayPal and Apple Pay will be available to your users when your implementation switches to live, we can’t provide dummy credentials for those.
+### Do this
 
-### On Live, prior to Go Live
+1. Add the staging script:
 
-  1. Mark 10 - 15 articles on your staging site as premium Add the live Axate code only to those articles
-  2. Provide us with the URLs of those articles
+```html
+<script async src="https://wallet-staging.axate.io/bundle.js"></script>
+```
 
-We recommend testing on the live environment prior to full go-live. To do this, mark as premium a few articles that are unlikely to be found organically (i.e. older articles or not currently topical). We recommend a sample of 10 to 15 articles for testing.
-To include Axate on selected articles
+2. Mark a small test set of articles as premium.
+3. Create test user journeys (register, top up, purchase, access premium content).
+4. If needed, request test payment credentials from Axate.
 
-  1. The Axate code needs to be added to just those articles. We suggest inserting it in the body text, so that it applies to only those articles
-  2. Change the code from staging to live as follows:
+### Verify
 
-The staging code is this:
+- Wallet tab appears on test pages.
+- Premium notice appears only on premium pages.
+- Successful purchase reveals premium content.
+- Free articles continue to behave as before.
 
-``` <script async src="https://wallet-staging.agate.io/bundle.js"></script> ```
+### Common failure and fix
 
-To make it like, delete word “staging” so that it appears like this:
+- Premium content never reveals: verify premium selector and content API response.
+- Wallet does not load: verify script host and environment URL.
+- Layout shifts: move the script and wallet element so they initialize before heavy ad scripts.
 
-``` <script async src="https://wallet.agate.io/bundle.js"></script> ```
+## Stage 2: Pilot on Live (Limited Articles)
 
-You should see Agate briefly if the page is still loading.
+### Do this
 
-On our side, we need to switch page notices etc over to our live database, so please let us know when you are ready to carry out the live testing.
+1. Select 10 to 15 low-risk live articles (older or low-discovery content).
+2. Apply live script only to the pilot set:
 
-Once you add the code, the green tab will appear in the left of the page, but no articles will be obscured until you mark them as premium.
+```html
+<script async src="https://wallet.axate.io/bundle.js"></script>
+```
 
-Let us know when the implementation has passed your user acceptance testing.
+3. Share pilot URLs with Axate to align live-side configuration.
+4. Execute user acceptance testing on the pilot set.
 
-### Go Live
+### Verify
 
-Once we have agreed a time and date for launch, we are ready to go-live. On go-live, the Axate code needs to be applied to the whole of the site. 
+- Pilot pages load the live wallet script.
+- Premium logic applies only to selected pilot pages.
+- End-to-end purchase and content retrieval works on live domains.
 
-To do this, move the code to the header section of your CMS template.
+## Stage 3: Full Go Live
 
-The green Axate tab will appear on all articles (free and premium) but the page notice will only appear on premium articles.
-Please ensure that the code is inserted in priority to any ads loading.
+### Do this
 
-If ads load prior to Axate, then article text will only load after the ads have finished loading, which leads to a poor user experience.
+1. Move the live script into your global article template/header.
+2. Keep premium tagging rules unchanged.
+3. Launch at an agreed date and time with Axate support aligned.
+
+### Verify
+
+- Wallet appears on all article pages.
+- Premium notice appears only where premium tagging exists.
+- No regressions in page speed or ad rendering order.
+
+### Common failure and fix
+
+- Ads block article render: ensure Axate loads before heavy ad chains where possible.
+- Inconsistent premium behavior across templates: confirm all article templates include the same wallet configuration.
+
+## Done Criteria
+
+Your integration is ready when:
+
+- Staging and pilot UAT pass.
+- Premium retrieval is secure and stable.
+- Full rollout is active across all article templates.
